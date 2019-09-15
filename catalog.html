@@ -8,12 +8,13 @@
   <header>
     <nav>
       <a href="#">
-        <img src="img/logo-technomart.svg" alt="Логотип Техномарт">
+        <img src="img/logo-technomart.svg" alt="Логотип интернет-магазина Техномарт">
       </a>
       <ul>
         <li>
           <form action="#" method="post">
-          <input type="text" placeholder="Поиск:">
+          <label for="appointment-search" class="visually-hidden">Поиск по сайту</label>
+          <input type="text" placeholder="Поиск:" name="search" id="appointment-search">
         </form>
         </li>
         <li>
@@ -28,35 +29,35 @@
       </ul>
     </nav>
     <section>
-      <h2>Адрес интернет-магазина</h2>
+      <h2 class="visually-hidden">Адрес интернет-магазина</h2>
       <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
       <p>
-        <span>+7 (812) 555-05-55</span>
-        <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+        <span aria-label="Телефон">+7 (812) 555-05-55</span>
+        <span aria-label="Адрес">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </p>
      </section>
     <nav>
       <ul>
         <li>
-          <a href="#">Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li>
-          <a href="#">Компания</a>
+          <a href="about.html">Компания</a>
         </li>
         <li>
-          <a href="#">Каталог</a>
+          <a href="catalog.html">Каталог</a>
         </li>
         <li>
-          <a href="#">Новости</a>
+          <a href="news.html">Новости</a>
         </li>
         <li>
-          <a href="#">Спецпредложения</a>
+          <a href="special.html">Спецпредложения</a>
         </li>
         <li>
-          <a href="#">Доставка</a>
+          <a href="delivery.html">Доставка</a>
         </li>
         <li>
-          <a href="#">Контакты</a>
+          <a href="contact.html">Контакты</a>
         </li>
       </ul>
       <ul>
@@ -77,8 +78,8 @@
     <h1>Перфораторы</h1>
     <!-- Хлебные крошки-->
     <ul>
-      <li><a href="#">Главная</a></li>
-      <li><a href="#">Каталог</a></li>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
       <li><a href="#">Инструмент</a></li>
       <li><a href="#">Перфораторы</a></li>
     </ul>
@@ -103,9 +104,34 @@
           <a href="#">От большего к меньшему</a>
         </li>
       </ul>
+      <!-- Фильтр товаров -->
+      <section>
+      <h2>Фильтр:</h2>
+      <form action="#" method="post">
+        <div>
+          <h3>Цена:</h3>
+          <!-- Тут скрипт сортировки по цене -->
+        </div>
+        <div>
+          <h3>Производители:</h3>
+          <label><input type="checkbox" name="vendors[1]" value="1">Bosch</label>
+          <label><input type="checkbox" name="vendors[2]" value="1">Интерскол</label>
+          <label><input type="checkbox" name="vendors[3]" value="1">Makita</label>
+          <label><input type="checkbox" name="vendors[4]" value="1">Dewalt</label>
+          <label><input type="checkbox" name="vendors[5]" value="1">Hitachi</label>
+        </div>
+        <div>
+          <h3>Питание:</h3>
+          <label><input type="radio" name="powertype" value="1">Аккумуляторные</label>
+          <label><input type="radio" name="powertype" value="2">Сетевые</label>
+        </div>
+        <button type="submit">Показать</button>
+        </form>
+      </section>
+      <!-- Конец: фильтр товаров -->
       <!-- Перечень товаров -->
         <section>
-          <img src="img/perforator-1.jpg" width="218" height="170" alt="Bosch BFG 3000">
+          <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
           <h3>
             <a href="#">Перфоратор BOSCH BFG 3000</a>
           </h3>
@@ -113,7 +139,7 @@
           <span>15 500 P.</span>
         </section>
         <section>
-          <img src="img/perforator-2.jpg" width="218" height="170" alt="Bosch BFG 6000">
+          <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
           <h3>
             <a href="#">Перфоратор BOSCH BFG 6000</a>
           </h3>
@@ -121,14 +147,14 @@
           <span>25 500 P.</span>
         </section>
         <section>
-          <img src="img/perforator-1.jpg" width="218" height="170" width="218" height="170" alt="Bosch BFG 2000">
+          <img src="img/perforator-1.jpg" width="218" height="170" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
           <h3>
             <a href="#">Перфоратор BOSCH BFG 2000</a>
           </h3>
           <span>12 500 P.</span>
         </section>
         <section>
-          <img src="img/perforator-1.jpg" width="218" height="170" alt="Bosch BFG 3000">
+          <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
           <h3>
             <a href="#">Перфоратор BOSCH BFG 3000</a>
           </h3>
@@ -136,7 +162,7 @@
           <span>15 500 P.</span>
         </section>
         <section>
-          <img src="img/perforator-2.jpg" width="218" height="170" alt="Bosch BFG 6000">
+          <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
           <h3>
             <a href="#">Перфоратор BOSCH BFG 6000</a>
           </h3>
@@ -144,14 +170,14 @@
           <span>25 500 P.</span>
         </section>
         <section>
-          <img src="img/perforator-1.jpg" width="218" height="170" alt="Bosch BFG 2000">
+          <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
           <h3>
             <a href="#">Перфоратор BOSCH BFG 2000</a>
           </h3>
           <span>12 500 P.</span>
         </section>
         <section>
-          <img src="img/perforator-1.jpg" width="218" height="170" alt="Bosch BFG 3000">
+          <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
           <h3>
             <a href="#">Перфоратор BOSCH BFG 3000</a>
           </h3>
@@ -159,7 +185,7 @@
           <span>15 500 P.</span>
         </section>
         <section>
-          <img src="img/perforator-2.jpg" width="218" height="170" alt="Bosch BFG 6000">
+          <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
           <h3>
             <a href="#">Перфоратор BOSCH BFG 6000</a>
           </h3>
@@ -167,7 +193,7 @@
           <span>25 500 P.</span>
         </section>
         <section>
-          <img src="img/perforator-1.jpg" alt="Bosch BFG 2000">
+          <img src="img/perforator-1.jpg" alt="Перфоратор Bosch BFG 2000">
           <h3>
             <a href="#">Перфоратор BOSCH BFG 2000</a>
           </h3>
@@ -203,35 +229,35 @@
   <!--  Подвал сайта -->
   <footer>
     <section>
-    <h2>Популярные группы каталога товара</h2>
+    <h2 class="visually-hidden">Популярные группы каталога товара</h2>
     <nav>
-      <img src="img/logo-technomart.svg" alt="Логотип Техномарт">
+      <img src="img/logo-technomart.svg" alt="Логотип интернет-магазина Техномарт">
       <ul>
         <li>
-            <a href="#">Компания</a>
+            <a href="about.html">Компания</a>
         </li>
         <li>
-            <a href="#">Каталог</a>
+            <a href="catalog.html">Каталог</a>
         </li>
         <li>
-            <a href="#">Доставка</a>
+            <a href="delivery.html">Доставка</a>
         </li>
         <li>
-            <a href="#">Контакты</a>
+            <a href="contact.html">Контакты</a>
         </li>
       </ul>
       <ul>
         <li>
-            <a href="#">Материалы</a>
+            <a href="materials.html">Материалы</a>
         </li>
         <li>
-            <a href="#">Техника</a>
+            <a href="technics.html">Техника</a>
         </li>
         <li>
-            <a href="#">Инструмент</a>
+            <a href="tooling.html">Инструмент</a>
         </li>
         <li>
-            <a href="#">Спецпредложения</a>
+            <a href="special.html">Спецпредложения</a>
         </li>
       </ul>
     </nav>
@@ -241,7 +267,7 @@
 </section>
 <!--  Копирайты и соцсети -->
 <section>
-  <h2>Копирайт и социальные сети</h2>
+  <h2 class="visually-hidden">Копирайт и социальные сети</h2>
   <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
   <ul>
     <li>
@@ -266,5 +292,13 @@
 <!--  Конец: Копирайты и соцсети -->
   </footer>
   <!--  Конец: Подвал сайта, тут счетчики -->
+  <!--  PopUP добавления в корзину -->
+  <section>
+    <h2>Товар добавлен в корзину!</h2>
+    <a href="#">Оформить заказ</a>
+    <button>Продолжить покупки</button>
+    <button aria-label="Закрыть">X</button>
+  </section>
+  <!--  Конец: PopUP добавления в корзину -->
   </body>
 </html>
