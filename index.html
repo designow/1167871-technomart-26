@@ -320,19 +320,13 @@
   <section>
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form action="feedback.html" method="post">
-      <label>
-        <p>Ваше имя:</p>
-        <input type="text" name="username" placeholder="Имя Фамилия">
-      </label>
-      <label>
-        <p>Ваше e-mail:</p>
-        <input type="text" name="useremail" placeholder="email@example.com">
-      </label>
-      <label>
-        <p>Текст письма:</p>
-        <textarea name="usertext" placeholder="В свободной форме"></textarea>
-      </label>
-      <button type="submit">Отправить</button>
+      <label for="appointment-username"><p>Ваше имя:</p></label>
+        <input type="text" name="username" placeholder="Имя Фамилия" id="appointment-username">
+      <label for="appointment-useremail"><p>Ваше e-mail:</p></label>
+        <input type="text" name="useremail" placeholder="email@example.com" id="appointment-useremail">
+      <label for="appointment-usertext"><p>Текст письма:</p></label>
+        <textarea name="usertext" placeholder="В свободной форме" id="appointment-usertext"></textarea>
+        <button type="submit">Отправить</button>
     </form>
   </section>
     <!-- Конец PopUP: Написать нам -->
