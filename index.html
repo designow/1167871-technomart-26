@@ -206,20 +206,38 @@
     <!--  Врезка - наши плюсы -->
     <section>
       <h2>Наши плюсы</h2>
-        <ul>
-          <li>
+        <div class="services-container">
             <h3>Сервисы</h3>
             <p>
               Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
-          </li>
-          <li>
-            <h3>Доставка</h3>
-            <p>
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-            </p>
-          </li>
-        </ul>
+        </div>
+        <div class="benefits-container">
+              <ul class="benefits">
+                <li class="benefits__li--active">Доставка</li>
+                <li class="benefits__li">Гарантия</li>
+                <li class="benefits__li">Кредит</li>
+              </ul>
+            <div class="delivery">
+                    <h3>Доставка</h3>
+                    <p>
+                      Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                    </p>
+            </div>
+            <div class="warranty visually-hidden">
+                    <h3>Гарантия</h3>
+                    <p>
+                      Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+                    </p>
+            </div>
+            <div class="loan visually-hidden">
+                    <h3>Кредит</h3>
+                    <p>
+                      Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+                    </p>
+                    <a class="btn">Отправить заявку</a>
+            </div>
+        </div>
     </section>
     <!--  Конец: Врезка - наши плюсы -->
     <!--  О компании Техномарт -->
@@ -243,16 +261,14 @@
     <section>
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-      <figure>
       <a href="contact.html"><img src="img/map.jpg" alt="Схема проезда"></a>
-     </figure>
       <a href="feedback.html">Заблудились? Напишите нам!</a>
     </section>
     <!--  Конец: Блока контакты -->
   </main>
   <!--  Подвал сайта -->
   <footer>
-    <section>
+    <div>
       <h2 class="visually-hidden">Быстрый доступ к разделам сайта</h2>
     <nav>
       <img src="img/logo-technomart.svg" alt="Логотип Техномарт">
@@ -288,20 +304,32 @@
     <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
       +7 (812) 555-05-55
     </p>
-</section>
+</div>
 <!--  Копирайты и соцсети -->
-<section>
+<div>
   <h2>Копирайт и социальные сети</h2>
   <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
   <ul>
     <li>
-        <a href="#"></a>
+      <a href="#" class="vk">
+        <svg>
+          <use xlink:href="img/sprite.svg#checkboxOn"></use>
+        </svg>
+      </a>
     </li>
     <li>
-        <a href="#"></a>
+      <a href="#" class="fb">
+        <svg>
+          <use xlink:href="img/sprite.svg#fb"></use>
+        </svg>
+      </a>
     </li>
     <li>
-        <a href="#"></a>
+      <a href="#" class="inst">
+        <svg>
+          <use xlink:href="img/sprite.svg#inst"></use>
+        </svg>
+      </a>
     </li>
   </ul>
   <ul>
@@ -312,30 +340,30 @@
           Разработано — <a href="https://htmlacademy.ru" target=_blank>htmlacademy.ru</a>
       </li>
   </ul>
-</section>
+</div>
 <!--  Конец: Копирайты и соцсети -->
   </footer>
   <!--  Конец: Подвал сайта, тут счетчики -->
   <!-- PopUP: Написать нам -->
-  <section>
+  <div>
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form action="feedback.html" method="post">
-      <label for="appointment-username"><p>Ваше имя:</p></label>
+      <label for="appointment-username">Ваше имя:</label>
         <input type="text" name="username" placeholder="Имя Фамилия" id="appointment-username">
-      <label for="appointment-useremail"><p>Ваше e-mail:</p></label>
+      <label for="appointment-useremail">Ваше e-mail:</label>
         <input type="text" name="useremail" placeholder="email@example.com" id="appointment-useremail">
-      <label for="appointment-usertext"><p>Текст письма:</p></label>
+      <label for="appointment-usertext">Текст письма:</label>
         <textarea name="usertext" placeholder="В свободной форме" id="appointment-usertext"></textarea>
         <button type="submit">Отправить</button>
     </form>
-  </section>
+  </div>
     <!-- Конец PopUP: Написать нам -->
     <!-- PopUP: Схема проезда -->
-    <section>
+    <div>
         <h2 class="visually-hidden">Схема проезда</h2>
         <img src="/img/map-big.jpg" alt="Схема проезда в Техномарт, ул. Новая, дом 15">
         <button type="button" title="Закрыть">X</button>
-    </section>
+    </div>
       <!-- Конец PopUP: Схема проезда -->
   </body>
 </html>
