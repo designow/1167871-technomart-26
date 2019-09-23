@@ -117,7 +117,6 @@
   align-items: center;
   background: #f9f5f0;
   margin-top: 20px;
-  margin-bottom: 20px;
   padding: 20px;
 }
 
@@ -406,7 +405,7 @@
 
 .brands{
   list-style: none;
-  margin: 0;
+  margin: 20px 0 0 0;
   padding: 0;
 }
 
@@ -498,7 +497,9 @@
   text-transform: uppercase;
 }
 /* Популярные категории на главной*/
-
+.popular-products{
+  margin-top:60px;
+}
 .popular-categories{
   display: flex;
   justify-content: space-between;
@@ -567,7 +568,7 @@
 .benefits-background{
   background-image: url("");
   background-color: #f5f8fa;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 /* Верхняя блок шапки сайта на главной */
@@ -744,6 +745,7 @@
   display: block;
   margin: 5px;
   font-size: 14px;
+  padding: 10px 0 0 5px;
 }
 
 .bottom-header__sing{
@@ -926,6 +928,44 @@
   color: #fff;
   overflow: hidden;
   background-color: #293449;
+}
+
+.vk::before{
+  content: "";
+  background-image: url(../img/icon-vk.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  margin: 13px 0 0 6px;
+}
+
+.fb::before{
+  content: "";
+  background-image: url(../img/icon-fb.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+}
+
+.inst::before{
+  content: "";
+  background-image: url(../img/icon-insta.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+}
+
+.social a{
+  background-color: #212a3a;
+  border-radius: 100%;
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  font-size: 0;
 }
 
 .feedback, .social{
