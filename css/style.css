@@ -662,6 +662,7 @@
 
 .top-header-container__cart--active{
   background-color: #ee3643;
+  padding: 12px 20px;
 }
 .top-header-container__bookmarks::before{
   content: "";
@@ -696,7 +697,7 @@
 
 .top-header-container__order{
   background-color: #63a63e;
-  padding: 13px 20px;
+  padding: 12px 20px;
 }
 
 /* Средний блок шапки сайта на главной */
