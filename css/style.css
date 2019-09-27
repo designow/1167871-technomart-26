@@ -574,11 +574,24 @@
 }
 
 .about__ul{
+  font-family: "Cuprum","Arial",sans-serif;
   font-size: 18px;
-  margin: 0;
+  line-height: 40px;
+  list-style: none;
 }
+.about__ul li::before{
+  content: '';
+  position: absolute;
+  left: -36px;
+  top: 19px;
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #fb565a;
+}
+
 .about__ul li{
-  margin-bottom: 20px;
+  position:relative;
 }
 .about__ul li:last-child{
   margin-bottom: 0;
