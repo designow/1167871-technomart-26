@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="body">
@@ -21,27 +22,26 @@
               </span>
 
             </form>
-
             <a href="#" class="top-header-container__bookmarks">Закладки: 0</a>
-
             <a href="#" class="top-header-container__cart">Корзина: 0</a>
-
             <a href="#" class="top-header-container__order">Оформить заказ</a>
-
       </nav>
     </div>
     <div class="container middle-header">
       <h2 class="visually-hidden">Адрес нашего магазина</h2>
       <p class="middle-header__slogan">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
       <div class="middle-adress">
-        <span aria-label="Телефон" class="middle-header__phone">+7 (812) 555-05-55</span>
-        <span aria-label="Адрес" class="middle-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+        <a aria-label="Телефон" href="tel:+78125550555" class="middle-header__phone">+7 (812) 555-05-55</a>
+        <address aria-label="Адрес" class="middle-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
       </div>
       <ul class="bottom-header__sing">
-        <li>
-          <a href="login.html">Войти</a>
+        <li class="bottom-header__singin">
+          <a href="login.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" class="login-icon"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+            Войти
+          </a>
         </li>
-        <li>
+        <li class="bottom-header__singup">
           <a href="singup.html">Регистрация</a>
         </li>
       </ul>
@@ -73,33 +73,42 @@
     </nav>
   </header>
   <main class="main">
-    <div class="container">
+    <div class="container container__promo">
     <h1 class="visually-hidden">Здесь размещаем ключевой запрос для нашего магазина</h1>
     <!-- Популярные группы на главной странице -->
     <section class="popular-categories">
       <h2 class="visually-hidden">Популярные группы каталога товара</h2>
-        <div class="popular-categories__div popular-categories__div--materials">
-          <div class="flag flag-new">новинка</div>
-          <h3>Материалы</h3>
-          <a href="#">на любой вкус</a>
+        <div class="popular-categories__div popular-categories__div--materials popular-categories__div--action">
+          <h3 class="popular-categories__heading">Материалы</h3>
+          <a href="#" class="popular-categories__url">на любой вкус</a>
         </div>
         <div class="popular-categories__div popular-categories__div--tools">
-          <h3>Инструмент</h3>
-          <a href="#">на все случаи</a>
+          <h3 class="popular-categories__heading">Инструмент</h3>
+          <a href="#" class="popular-categories__url">на все случаи</a>
         </div>
         <div class="popular-categories__div popular-categories__div--technics">
-          <h3>Техника</h3>
-          <a href="#">для стройки</a>
+          <h3 class="popular-categories__heading">Техника</h3>
+          <a href="#" class="popular-categories__url">для стройки</a>
         </div>
     </section>
     <!-- Конец: Популярные группы на главной странице -->
     <!-- JS баннер на главной странице -->
-    <div class="wrapper">
-    <div class="main-banner">
-
-        <h2 class="main-banner__h2">Дрели</h2>
-        <span class="main-banner__span">Соседям на радость!</span>
-        <a href="catalog.html" class="btn main-banner__button">Открыть каталог</a>
+    <div class="wrapper wrapper--main">
+      <div class="main-banner">
+        <div class="main-banner__item">
+          <h2 class="main-banner__h2">Дрели</h2>
+          <span class="main-banner__span">Соседям на радость!</span>
+          <a href="catalog.html" class="btn main-banner__button">Открыть каталог</a>
+      </div>
+      <div class="main-banner__item visually-hidden">
+          <h2 class="main-banner__h2">Дрели</h2>
+          <span class="main-banner__span">Соседям на радость!</span>
+          <a href="catalog.html" class="btn main-banner__button">Открыть каталог</a>
+    </div>
+    <ul class="main-banner-control">
+          <li class="main-banner-control__item"></li>
+          <li class="main-banner-control__item main-banner-control__item--active"></li>
+      </ul>
         <span class="main-banner__left">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/></svg>
         </span>
@@ -112,12 +121,12 @@
   <section class="main-promotion">
     <h2 class="visually-hidden">Акции магазина Техномарт</h2>
       <div class="popular-categories__div popular-categories__div--sale">
-        <h3>Скидка 50%</h3>
-        <a href="#">на 350 товаров</a>
+        <h3 class="popular-categories__heading">Скидка 50%</h3>
+        <a href="#" class="popular-categories__url">на 350 товаров</a>
       </div>
       <div class="popular-categories__div popular-categories__div--delivery">
-        <h3>Доставка</h3>
-        <a href="#">Бесплатно</a>
+        <h3 class="popular-categories__heading">Доставка</h3>
+        <a href="#" class="popular-categories__url">Бесплатно</a>
       </div>
   </section>
 </div>
@@ -242,7 +251,7 @@
   </div>
     <!--  Врезка - наши плюсы -->
     <div class="benefits-background">
-    <section class="container benefits-container">
+    <section class="container">
       <h2 class="visually-hidden">Наши плюсы</h2>
         <div class="services-container">
             <h3 class="services-container__h3">Сервисы</h3>
@@ -257,7 +266,7 @@
                 <li class="benefits__li">Гарантия</li>
                 <li class="benefits__li">Кредит</li>
               </ul>
-            <div class="delivery">
+            <div class="benefits__detail delivery">
                     <h3 class="benefits__h3">Доставка</h3>
                     <p class="benefits__p">
                       Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!
@@ -303,7 +312,7 @@
     <section class="about">
       <h2 class="about__h2">Контакты</h2>
       <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-      <a href="contact.html"><img src="img/map.jpg" alt="Схема проезда"></a>
+      <a href="contact.html" class="about__map__url"><img src="img/map.jpg" alt="Схема проезда" class="about__map"></a>
       <a href="feedback.html" class="btn btn--about">Заблудились? Напишите нам!</a>
     </section>
     <!--  Конец: Блока контакты -->
@@ -312,9 +321,8 @@
   <!--  Подвал сайта -->
   <footer class="footer">
     <div class="container">
-      <h2 class="visually-hidden">Быстрый доступ к разделам сайта</h2>
     <nav class="footer-top">
-      <img src="img/logo-technomart.svg" alt="Логотип Техномарт" class="footer-top__logo">
+      <a href="#" class="footer-top__logo"><img src="img/logo-technomart.svg" alt="Логотип Техномарт"></a>
       <ul class="footer-top__ul">
         <li>
             <a href="about.html">Компания</a>
@@ -331,9 +339,9 @@
       </ul>
       </nav>
       <div class="footer-middle">
-      <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+      <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         +7 (812) 555-05-55
-      </p>
+      </address>
 
       <ul class="footer-top__ul footer-top__ul--middle">
         <li>
