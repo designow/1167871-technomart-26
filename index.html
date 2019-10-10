@@ -312,44 +312,26 @@
       <h2 class="about__h2">Контакты</h2>
       <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
       <a href="contact.html" class="about__map__url"><img src="img/map.jpg" alt="Схема проезда" class="about__map"></a>
-      <a href="feedback.html" class="btn btn--about">Заблудились? Напишите нам!</a>
+      <a href="feedback.html" class="btn btn--about help-button">Заблудились? Напишите нам!</a>
     </section>
     <!--  Конец: Блока контакты -->
         <!-- PopUP: Схема проезда -->
     <div class="map-popup">
         <h2 class="visually-hidden">Схема проезда</h2>
         <button type="button" title="Закрыть" class="mapClose">
-          <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
-<path fill="#EE3643" d="M13.273,10.5l7.422-7.422c0.389-0.389,0.389-1.025,0-1.414l-1.359-1.359c-0.389-0.389-1.025-0.389-1.414,0
-  L10.5,7.727L3.078,0.305c-0.389-0.389-1.025-0.389-1.414,0L0.305,1.664c-0.389,0.389-0.389,1.025,0,1.414L7.727,10.5l-7.421,7.422
-  c-0.389,0.389-0.389,1.025,0,1.414l1.359,1.359c0.389,0.389,1.025,0.389,1.414,0l7.422-7.422l7.422,7.422
-  c0.389,0.389,1.025,0.389,1.414,0l1.359-1.359c0.389-0.389,0.389-1.025,0-1.414L13.273,10.5z"/>
-</svg>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
+          <path fill="#EE3643" d="M13.273,10.5l7.422-7.422c0.389-0.389,0.389-1.025,0-1.414l-1.359-1.359c-0.389-0.389-1.025-0.389-1.414,0
+            L10.5,7.727L3.078,0.305c-0.389-0.389-1.025-0.389-1.414,0L0.305,1.664c-0.389,0.389-0.389,1.025,0,1.414L7.727,10.5l-7.421,7.422
+            c-0.389,0.389-0.389,1.025,0,1.414l1.359,1.359c0.389,0.389,1.025,0.389,1.414,0l7.422-7.422l7.422,7.422
+            c0.389,0.389,1.025,0.389,1.414,0l1.359-1.359c0.389-0.389,0.389-1.025,0-1.414L13.273,10.5z"/>
+          </svg>
         </button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d594.1898431367896!2d30.32281709519088!3d59.938639343398236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1460921418112"
+                width="940" height="448" frameborder="0" style="border:0" allowfullscreen>
+              </iframe>
     </div>
       <!-- Конец PopUP: Схема проезда -->
-      <script>
-        let mapPopup = document.querySelector(".map-popup");
-        let mapLink = document.querySelector(".about__map__url");
-        let mapClose = mapPopup.querySelector(".mapClose");
-        
-         
-          //Открытие карты
-          mapLink.addEventListener("click", function (evt) {
-          evt.preventDefault();
-          mapPopup.classList.add("modal-show");
-          });
-
-          //Закрытие карты
-          mapClose.addEventListener("click", function (evt) {
-               mapPopup.classList.remove("modal-show");
-          });
-
-      </script>
   </div>
   </main>
   <!--  Подвал сайта -->
@@ -423,18 +405,70 @@
   </footer>
   <!--  Конец: Подвал сайта, тут счетчики -->
   <!-- PopUP: Написать нам -->
-  <div class="visually-hidden">
+  <div class="feedback-block">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form action="feedback.html" method="post">
-      <label for="appointment-username">Ваше имя:</label>
-        <input type="text" name="username" placeholder="Имя Фамилия" id="appointment-username">
-      <label for="appointment-useremail">Ваше e-mail:</label>
-        <input type="text" name="useremail" placeholder="email@example.com" id="appointment-useremail">
+      <button class="feedback-close-btn">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
+          <path fill="#EE3643" d="M13.273,10.5l7.422-7.422c0.389-0.389,0.389-1.025,0-1.414l-1.359-1.359c-0.389-0.389-1.025-0.389-1.414,0
+            L10.5,7.727L3.078,0.305c-0.389-0.389-1.025-0.389-1.414,0L0.305,1.664c-0.389,0.389-0.389,1.025,0,1.414L7.727,10.5l-7.421,7.422
+            c-0.389,0.389-0.389,1.025,0,1.414l1.359,1.359c0.389,0.389,1.025,0.389,1.414,0l7.422-7.422l7.422,7.422
+            c0.389,0.389,1.025,0.389,1.414,0l1.359-1.359c0.389-0.389,0.389-1.025,0-1.414L13.273,10.5z"/>
+          </svg>
+      </button>
+      <form action="feedback.html" method="post" class="feedback-block__content">
+        <div class="feedback-userinfo-block">
+              <p class="feedback-item">
+            <label for="appointment-username">Ваше имя:</label>
+              <input type="text" name="username" placeholder="Имя Фамилия" id="appointment-username" class="feedback-form-username">
+            </p>
+            <p class="feedback-item">
+            <label for="appointment-useremail">Ваше e-mail:</label>
+              <input type="text" name="useremail" placeholder="email@example.com" id="appointment-useremail" class="feedback-form-emeil">
+            </p>
+      </div>
+        <p class="feedback-item feedback-item--message">
       <label for="appointment-usertext">Текст письма:</label>
-        <textarea name="usertext" placeholder="В свободной форме" id="appointment-usertext"></textarea>
-        <button type="submit">Отправить</button>
+        <textarea name="usertext" placeholder="В свободной форме" id="appointment-usertext" class="feedback-form-message"></textarea>
+      </p>
+      <div class="feedback-btn-block">
+        <button type="submit" class="feedback-btn">Отправить</button>
+        </div>
     </form>
   </div>
     <!-- Конец PopUP: Написать нам -->
+          <script>
+        let mapPopup = document.querySelector(".map-popup");
+        let mapLink = document.querySelector(".about__map__url");
+        let mapClose = mapPopup.querySelector(".mapClose");
+        let feedback = document.querySelector(".feedback-block");
+        let feedbackClose = feedback.querySelector(".feedback-close-btn");
+        let helpbutton = document.querySelector(".help-button");
+         
+          //Открытие карты
+          mapLink.addEventListener("click", function (evt) {
+          evt.preventDefault();
+          mapPopup.classList.add("modal-show");
+          });
+
+          //Открытие формы обратной связи
+          helpbutton.addEventListener("click", function (evt) {
+          evt.preventDefault();
+          feedback.classList.add("modal-show");
+          });
+
+          //Закрытие карты
+          mapClose.addEventListener("click", function (evt) {
+               mapPopup.classList.remove("modal-show");
+          });
+
+          //Закрытие карты
+          feedbackClose.addEventListener("click", function (evt) {
+               feedback.classList.remove("modal-show");
+          });
+
+
+
+      </script>
   </body>
 </html>
