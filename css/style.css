@@ -117,7 +117,17 @@
 
 
 .visually-hidden{
-  display:none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .user-menu-orders:hover, .user-menu-cabinet:hover{
@@ -173,6 +183,10 @@
   background: #f9f5f0;
   margin-bottom: 20px;
   padding: 20px;
+}
+
+.wrapper--start{
+  align-items: flex-start;
 }
 
 .popular-products__heading{
@@ -547,6 +561,7 @@
   width: 240px;
   background: #32425c;
   position: relative;
+  min-width: 240px;
 }
 
 .benefits::after{
@@ -560,6 +575,13 @@
   right:0;
   transform: translateY(-50%);
   opacity: 0.25;
+}
+
+.benefits__list{
+  margin: 0;
+  padding: 0;
+  list-style:none;
+  flex-grow: 2;
 }
 
 .benefits__h3{
@@ -578,41 +600,78 @@
   margin: 0;
 }
 
-.delivery{
+.benefits__detail:first-child{
   background-image: url("../img/truck.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
+.benefits__detail:nth-child(2){
+  background-image: url("../img/warranty.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.benefits__detail:last-child{
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.benefits__detail:last-child p {
+    width: 280px;
+    margin-bottom: 20px;
+}
+
+.benefits__detail:nth-child(2) p {
+    width: 380px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
 .benefits-detail{
-  justify-content: start;
-  align-items: flex-start;
-}
+  width: 620px;
+  min-height: 285px;
+} 
 
-.benefits__li{
-  color: #fff;
-  border-top: 1px solid #405069;
-  border-bottom: 1px solid #32425c;
+.benefits__item{
+  display: block;
   font-size: 21px;
-  font-weight: bold;
-  padding: 20px;
+  font-weight: 700;
+  background-color: #32425c;
+  padding: 20px 22px 18px;
+  -webkit-box-shadow: inset 0 -1px 0 0 #293449,inset 0 1px 0 0 #405069;
+  box-shadow: inset 0 -1px 0 0 #293449,inset 0 1px 0 0 #405069;
+  cursor: pointer;
+  color: #ffffff;
 }
 
-.benefits__li:hover{
+.benefits__item:hover{
   color:#fff;
   background: #293449;
 }
 
-.benefits__li--active{
-  color: #32425c;
-  background-color: #ffffff;
-  border-top: 0;
+
+#services-1:checked ~ .benefits .benefits__item--1, #services-2:checked ~ .benefits .benefits__item--2, #services-3:checked ~ .benefits .benefits__item--3 {
+    background-color: #fff;
+    color: #32425c;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+#services-1:checked ~ .benefits__list .benefits__detail:first-child, 
+#services-2:checked ~ .benefits__list .benefits__detail:nth-child(2), 
+#services-3:checked ~ .benefits__list .benefits__detail:last-child {
+    display: block;
 }
 
 .benefits__detail{
   margin-left: 80px;
   flex-grow: 2;
   min-height: 285px;
+  display: none;
 }
 
 

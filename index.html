@@ -259,32 +259,41 @@
             </p>
         </div>
 
-        <div class="wrapper wrapper--no-wrap benefits-detail">
-              <ul class="benefits">
-                <li class="benefits__li benefits__li--active">Доставка</li>
-                <li class="benefits__li">Гарантия</li>
-                <li class="benefits__li">Кредит</li>
-              </ul>
-            <div class="benefits__detail delivery">
-                    <h3 class="benefits__h3">Доставка</h3>
-                    <p class="benefits__p">
-                      Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!
-                    </p>
-                    <p class="benefits__p">Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
-            </div>
-            <div class="warranty visually-hidden">
-                    <h3 class="benefits__h3">Гарантия</h3>
-                    <p>
-                      Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
-                    </p>
-            </div>
-            <div class="loan visually-hidden">
-                    <h3 class="benefits__h3">Кредит</h3>
-                    <p>
-                      Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
-                    </p>
-                    <a class="btn">Отправить заявку</a>
-            </div>
+        <div class="wrapper wrapper--no-wrap wrapper--start">
+          <input class="visually-hidden" type="radio" name="buttons" id="services-1" checked="">
+          <input class="visually-hidden" type="radio" name="buttons" id="services-2">
+          <input class="visually-hidden" type="radio" name="buttons" id="services-3">
+              <div class="benefits">
+                <label class="benefits__item benefits__item--1" for="services-1">Доставка</label> 
+                <label class="benefits__item benefits__item--2" for="services-2">Гарантия</label> 
+                <label class="benefits__item benefits__item--3" for="services-3">Кредит</label> 
+              </div>
+             
+              <ul class="benefits__list">
+                <li class="benefits__detail">
+                        <h3 class="benefits__h3">Доставка</h3>
+                        <p class="benefits__p">
+                          Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!
+                        </p>
+                        <p class="benefits__p">Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
+                </li>
+                <li class="benefits__detail">
+                        <h3 class="benefits__h3">Гарантия</h3>
+                        <p class="benefits__p">
+                          Если купленный у нас товар поломается или заискрит,
+                          <br>а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> 
+                          Дом уж восстановите как-нибудь сами.
+                        </p>
+                </li>
+            
+                <li class="benefits__detail">
+                        <h3 class="benefits__h3">Кредит</h3>
+                        <p class="benefits__p">
+                          Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+                        </p>
+                        <a class="btn">Отправить заявку</a>
+                </li>
+         </ul>
           </div>
     </section>
   </div>
