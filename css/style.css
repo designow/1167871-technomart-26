@@ -2,6 +2,7 @@
 .body{
   background: #f3f6f8;
   font-family: "Cuprum", sans-serif;
+  font-size: 17px;
 }
 
 .header{
@@ -58,6 +59,10 @@
   font-family: "PT Sans", sans-serif;
   text-decoration: none;
   color: #424242;
+}
+.breadcrumbs li a:hover{
+  text-decoration: underline;
+  color: #ee3643;
 }
 
 .btn{
@@ -136,18 +141,33 @@
 
 .user-menu{
   display: flex;
-  margin: 10px 0 0 5px;
+  margin: 10px 0 0 15px;
   padding: 0;
-}
-
-.user-menu li:first-child{
   list-style: none;
-  margin-left: 10px;
 }
 
 .user-menu li{
-  margin-left: 25px;
+  position: relative;
+  padding-right: 30px;
 }
+
+.user-menu li::after{
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  background-color: #32425c;
+  border-radius: 50%;
+}
+.user-menu li:last-child{
+  padding-right: 0;
+  }
+
+.user-menu li:last-child::after{
+  background: none;
+  }
 
 .user-menu a{
   color: #49586f;
@@ -1016,6 +1036,39 @@
     background-repeat: no-repeat;
 }
 
+.main-banner__item{
+  display: none;
+  min-height:266px;
+}
+
+.main-banner__description{
+  background-color: rgba(0,0,0,.2);
+  padding: 26px 25px 22px;
+}
+
+
+#slider-1:checked ~ .main-banner__items .main-banner__item:first-child, 
+#slider-2:checked ~ .main-banner__items .main-banner__item:last-child {
+    display: block;
+}
+
+.main-banner__item:first-child {
+     background-image: url("../img/banner-1.jpg");
+      background-repeat: no-repeat;
+}
+
+.main-banner__item:last-child {
+    background-image: url(../img/banner-2.jpg);
+    background-repeat: no-repeat;
+}
+
+.main-banner__items{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
 .main-banner-control{
   position: absolute;
   bottom: 10px;
@@ -1032,7 +1085,7 @@
   background-color: #fff;
   margin: 0 5px;
   border-radius: 50%;
-  position: relative;
+  cursor: pointer;
 }
 
 .main-banner-control__item--active::before{
@@ -1214,6 +1267,10 @@
   background-color: #ee3643;
 }
 
+.top-header-container__cart--active:hover{
+  background-color: red;
+}
+
 .top-header-container__input,
 .top-header-container__bookmarks,
 .top-header-container__cart,
@@ -1333,46 +1390,55 @@
   padding-right: 10px;
 }
 
-.bottom-header__login{
-  display: block;
-  background-color: #ffffff;
-  color: #000;
-  font-size: 21px;
-  padding: 10px 30px 10px 40px;
-  text-decoration: none;
-}
-.bottom-header__login b{
-  font-weight: 100;
-  padding-right: 30px;
+.user-name{
+    display: block;
+    font-size: 21px;
+    line-height: 18px;
+    color: #000;
 }
 
-.bottom-header__logout::before{
-  background-image: url("../img/icon-logout.svg");
-  background-repeat: no-repeat;
-  content:"";
-  margin-top: 3px;
-  position: absolute;
-  width: 20px;
-  height: 17px;
+.user-info {
+
+    position: relative;
+    margin: 0;
+    padding: 15px 68px 13px 47px;
+    background-color: #fff;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+.bottom-header__login{
+  text-decoration: none;
+}
+
+.bottom-header__login path {
+    fill: #c5c5c5;
+}
+.bottom-header__login:hover path {
+    fill: #32425c;
+}
+
+.bottom-header__login svg {
+    position: absolute;
+    left: 13px;
+}
+
+
+.bottom-header__logout svg {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+}
+
+.bottom-header__logout:hover path, .bottom-header__logout:hover polygon {
+    fill: #32425c;
 }
 
 .bottom-header__logout{
   font-size: 0;
 }
 
-.bottom-header__login b::before{
-  content: "";
-  background-image: url("../img/icon-user.svg");
-  background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
-  margin-left: -30px;
-  margin-top: 2px;
-  position: absolute;
-}
-
-
 /* Нижний блок шапки сайта на главной*/
+
 .bottom-header{
   background-color: #32425c;
 }
@@ -1383,17 +1449,33 @@
 }
 
 .bottom-header__menu{
-  justify-content: space-around;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #32425c;
   border-bottom: 5px solid #293449;
+  padding-left: 21px;
+  padding-right: 25px;
 }
 
 .bottom-header__menu a{
+  color: #fff;
+  line-height: 17px;
   display: block;
-  color: #ffffff;
-  padding: 20px 30px;
+  padding: 20px 25px 19px;
   text-decoration: none;
+}
+
+.bottom-header__menu li {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
 }
 
 .bottom-header__menu li:hover{
@@ -1401,14 +1483,21 @@
 }
 
 .bottom-header__menu a:active{
-  opacity: 0.3;
+  background-color: #1d2739;
+    color: #868c95;
 }
+
+.bottom-header__menu .active{
+  background-color: #1d2739;
+  color: #868c95;
+}
+
+
 
 /* Баннер и акции */
 
 .main-banner{
-  background-image: url("../img/banner-1.jpg");
-  background-repeat: no-repeat;
+  background: #333;
   color: #ffffff;
   width: 620px;
   height: 266px;
@@ -1416,41 +1505,49 @@
 }
 
 .main-banner__heading{
-  position: absolute;
-  font-family: "Cuprum", sans-serif;
   font-size: 36px;
+  line-height: 30px;
+  font-weight: 700;
   margin: 0;
-  padding: 0;
-  top: 27px;
-  left: 24px;
   text-transform: uppercase;
-
 }
 
 .main-banner__span{
-  position: absolute;
-  font-family: "Cuprum", sans-serif;
+  display: block;
+  margin: 3px 0 0;
+  font-family: "PT Sans",Arial,sans-serif;
   font-size: 18px;
-  top: 75px;
-  left: 25px;
+  line-height: 24px;
+}
+
+.main-banner__left, .main-banner__right{
+   position: absolute;
+   cursor: pointer;
+   top: 115px;
 }
 
 .main-banner__left{
-  position: absolute;
   left: 25px;
-  top: 115px;
+
+
 }
 
 .main-banner__right{
-  position: absolute;
   right: 25px;
-  top: 115px;
 }
 
 .main-banner__button{
-  position: absolute;
-  bottom: 22px;
-  left: 25px;
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  margin-top: 102px;
+  margin-left: 26px;
+  background-color: #ee3643;
+  width: 195px;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
 }
 
 .main-promotion{
@@ -1739,6 +1836,143 @@
 .copyright{
   width: 230px;
   margin: 0;
+}
+
+.modal-info {
+    display: none;
+    position: fixed;
+    width: 620px;
+    top: 10px;
+    left: 50%;
+    margin-left: -310px;
+    background-color: #fff;
+    border-top: 7px solid #ee3643;
+    -webkit-box-shadow: 0 15px 32px 0 #ccc;
+    box-shadow: 0 15px 32px 0 #ccc;
+    z-index: 20;
+  }
+
+ .modal-info .icon {
+    position: relative;
+    margin: 0 30px 0 0;
+    width: 67px;
+    height: 67px;
+    background-color: #63a63e;
+    border-radius: 50%;
+  }
+
+.modal-info .icon::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    width: 32px;
+    height: 15px;
+    border: 8px solid #fff;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-top-style: none;
+    border-right-style: none;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+  .modal-info h2 {
+    font-size: 30px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: -1.4px;
+    margin: 0;
+    color: #000;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+.modal-info .heading-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 45px 80px 49px;
+    }
+
+.modal-container {
+    position: relative;
+}
+
+.modal-info .modal-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 38px 80px;
+    background-color: #f1f1f1;
+    }
+
+    .modal-buttons a {
+    color: #fff;
+    background-color: #ee3643;
+}
+
+.modal-buttons .continue, .modal-buttons a {
+    display: block;
+    border: 0;
+    cursor: pointer;
+    width: 220px;
+    padding: 10px 0;
+    text-align: center;
+    font-family: "Cuprum",Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.modal-buttons .continue:hover {
+    background-color: #fbf9f9;
+}
+
+.modal-buttons a:hover {
+    background-color: #ca2c37;
+}
+
+.modal-buttons .continue {
+    background-color: #fff;
+    outline: 0;
+}
+
+.modal-buttons .modal-close {
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: 0;
+}
+
+.modal-buttons .modal-close::after, .modal-buttons .modal-close::before {
+    content: "";
+    width: 25px;
+    height: 4px;
+    position: absolute;
+    left: 2px;
+    top: 12px;
+    background-color: #ee3643;
+}
+.modal-buttons .modal-close::before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.modal-buttons .modal-close::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 .modal-show{
