@@ -635,7 +635,7 @@
 .benefits__detail:nth-child(2){
   background-image: url("../img/warranty.png");
   background-repeat: no-repeat;
-  background-position: 149px 27px;
+  background-position: 239px 4px;
 }
 
 .benefits__detail:last-child{
