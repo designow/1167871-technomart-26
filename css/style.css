@@ -15,7 +15,7 @@
     margin: 0;
     padding-top: 21px;
     margin-left: -1px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -304,7 +304,6 @@
   font-size: 30px;
   font-weight: 100;
   margin: 0;
-  margin-bottom: 20px;
   padding: 27px;
   text-transform: uppercase;
 }
@@ -383,7 +382,10 @@ border-radius: 4px;
     padding: 8px 17px 11px 19px;
     background-color: #f7f3ec;
     border-radius: 4px;
-    margin-bottom: 20px;
+}
+
+.sorting__container, .filter__container{
+  padding: 20px 0;
 }
 
 .sorting-item a {
@@ -415,6 +417,10 @@ border-radius: 4px;
   padding-bottom: 25px;
   margin-top: 18px;
   border-bottom: 1px solid #e5e5e5;
+}
+.filters__block:first-child{
+  margin-top:0;
+
 }
 
 .sorting-buttons .button-down, .sorting-buttons .button-up {
@@ -884,8 +890,9 @@ border-radius: 4px;
 .benefits__detail{
   margin-left: 80px;
   flex-grow: 2;
-  min-height: 285px;
   display: none;
+  min-height: 255px;
+  padding-bottom: 30px;
 }
 
 
@@ -1605,6 +1612,7 @@ border-radius: 4px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 36px;
+  margin-left: 53px;
 }
 
 .middle-header__slogan {
@@ -1613,7 +1621,7 @@ border-radius: 4px;
   font-style: italic;
   font-weight: 500;
   color: #ee3643;
-  margin: 0px 0 0 53px;
+  margin: 0;
   width: 205px;
 }
 
@@ -1881,7 +1889,7 @@ border-radius: 4px;
 .footer-top{
   display: flex;
   align-items: flex-start;
-  margin-bottom: 35px;
+  padding-bottom: 20px;
 }
 
 .footer-top__items{
@@ -1936,7 +1944,7 @@ border-radius: 4px;
 
 .footer-middle{
   display: flex;
-  padding: 0 0 53px 0;
+  padding: 15px 0 53px 0;
 }
 
 .footer-address{
@@ -2025,7 +2033,7 @@ border-radius: 4px;
   display: flex;
   font-size: 16px;
   line-height: 18px;
-  margin-top:1px;
+  padding-top:1px;
 }
 
 .feedback li:first-child{
