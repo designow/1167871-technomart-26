@@ -27,63 +27,66 @@
             <a href="#" class="top-header-container__order">Оформить заказ</a>
       </nav>
     </div>
-    <div class="container middle-header">
-      <h2 class="visually-hidden">Адрес нашего магазина</h2>
-      <p class="middle-header__slogan">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
-        <div class="contacts-box">
-          <p class="phone">
-            <a href="#" class="phone-number">+7 (812) 555-05-55</a>
+    <div class="container container--header">
+      <div class="middle-header">
+        <h2 class="visually-hidden">Адрес нашего магазина</h2>
+        <p class="middle-header__slogan">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
+          <div class="contacts-box">
+            <p class="phone">
+              <a href="#" class="phone-number">+7 (812) 555-05-55</a>
+            </p>
+            <address class="address">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </address>
+          </div>
+        <p class="authorization">
+            <a class="login" href="">
+              <svg 
+                version="1.1" x="0px" y="0px"
+                width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
+                <g>
+                  <polygon fill="#c5c5c5" points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17   "/>
+                </g>
+                <path fill="#c5c5c5" d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
+                v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/>
+              </svg>
+              <span>Войти</span>
+            </a>
+            <a class="registration" href="">Регистрация</a>
           </p>
-          <address class="address">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </address>
-        </div>
-      <p class="authorization">
-          <a class="login" href="">
-            <svg 
-              version="1.1" x="0px" y="0px"
-              width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
-              <g>
-                <polygon fill="#c5c5c5" points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17   "/>
-              </g>
-              <path fill="#c5c5c5" d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
-              v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/>
-            </svg>
-            <span>Войти</span>
-          </a>
-          <a class="registration" href="">Регистрация</a>
-        </p>
+      </div>
+      <nav class="bottom-header">
+          <ul class="bottom-header__menu">
+            <li>
+              <a class="active" class="menu__link active">Главная</a>
+            </li>
+          <li>
+              <a href="about.html" class="menu__link">Компания</a>
+          </li>
+          <li>
+              <a href="catalog.html" class="menu__link">Каталог</a>
+          </li>
+          <li>
+              <a href="news.html" class="menu__link">Новости</a>
+          </li>
+          <li>
+              <a href="special.html" class="menu__link">Спецпредложения</a>
+          </li>
+          <li>
+              <a href="delivery.html" class="menu__link">Доставка</a>
+          </li>
+          <li>
+              <a href="contact.html" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="container bottom-header">
-      <ul class="bottom-header__menu">
-        <li>
-          <a class="active">Главная</a>
-        </li>
-        <li>
-          <a href="about.html">Компания</a>
-        </li>
-        <li>
-          <a href="catalog.html">Каталог</a>
-        </li>
-        <li>
-          <a href="news.html">Новости</a>
-        </li>
-        <li>
-          <a href="special.html">Спецпредложения</a>
-        </li>
-        <li>
-          <a href="delivery.html">Доставка</a>
-        </li>
-        <li>
-          <a href="contact.html">Контакты</a>
-        </li>
-      </ul>
-    </nav>
   </header>
   <main class="main">
-    <div class="container container__promo">
-    <h1 class="visually-hidden">Здесь размещаем ключевой запрос для нашего магазина</h1>
+    <div class="container">
+    <h1 class="visually-hidden">Супер - магазин</h1>
     <!-- Популярные группы на главной странице -->
+    <div class=" container__promo">
     <section class="popular-categories">
       <h2 class="visually-hidden">Популярные группы каталога товара</h2>
         <div class="popular-categories__block popular-categories__block--materials popular-categories__block--action">
@@ -101,7 +104,7 @@
     </section>
     <!-- Конец: Популярные группы на главной странице -->
     <!-- JS баннер на главной странице -->
-    <div class="wrapper wrapper--main">
+    <div class="wrapper">
       <div class="main-banner">
         <input type="radio" id="slider-1" name="toggle" checked="" class="visually-hidden">
         <input type="radio" id="slider-2" name="toggle" class="visually-hidden">
@@ -134,18 +137,19 @@
     </div>
   <!-- Конец: JS баннер на главной странице -->
   <!-- Акции и доставка на главной странице -->
-  <section class="main-promotion">
-    <h2 class="visually-hidden">Акции магазина Техномарт</h2>
-      <div class="popular-categories__block popular-categories__block--sale">
-        <h3 class="popular-categories__heading">Скидка 50%</h3>
-        <a href="#" class="popular-categories__url">на 350 товаров</a>
-      </div>
-      <div class="popular-categories__block popular-categories__block--delivery">
-        <h3 class="popular-categories__heading">Доставка</h3>
-        <a href="#" class="popular-categories__url">Бесплатно</a>
-      </div>
-  </section>
-</div>
+      <section class="main-promotion">
+        <h2 class="visually-hidden">Акции магазина Техномарт</h2>
+          <div class="popular-categories__block popular-categories__block--sale">
+            <h3 class="popular-categories__heading">Скидка 50%</h3>
+            <a href="#" class="popular-categories__url">на 350 товаров</a>
+          </div>
+          <div class="popular-categories__block popular-categories__block--delivery">
+            <h3 class="popular-categories__heading">Доставка</h3>
+            <a href="#" class="popular-categories__url">Бесплатно</a>
+          </div>
+      </section>
+    </div>
+  </div>
   <!-- Конец: Акции и доставка на главной странице -->
   <!-- Популярные товары на главной странице -->
   <section class="popular-products">
@@ -153,7 +157,7 @@
         <h2 class="popular-products__heading">Популярные товары:</h2>
         <a href="#" class="btn">Все популярные товары</a>
     </div>
-    <div class="wrapper wrapper--no-wrap products_on_main">
+    <div class="wrapper wrapper--no-wrap">
       <section class="product">
         <div class="actions">
           <a href="#" class="buy">Купить</a>
@@ -275,7 +279,7 @@
             </p>
         </div>
 
-        <div class="wrapper wrapper--no-wrap wrapper--start">
+        <div class="wrapper wrapper--start">
           <input class="visually-hidden" type="radio" name="buttons" id="services-1" checked="">
           <input class="visually-hidden" type="radio" name="buttons" id="services-2">
           <input class="visually-hidden" type="radio" name="buttons" id="services-3">
@@ -288,14 +292,14 @@
               <ul class="benefits__list">
                 <li class="benefits__detail">
                         <h3 class="benefits__h3">Доставка</h3>
-                        <p class="benefits__p">
+                        <p class="benefits__p benefits__p--sl-1">
                           Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!
                         </p>
                         <p class="benefits__p">Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
                 </li>
                 <li class="benefits__detail">
                         <h3 class="benefits__h3">Гарантия</h3>
-                        <p class="benefits__p">
+                        <p class="benefits__p benefits__p--sl-2">
                           Если купленный у нас товар поломается или заискрит,
                           <br>а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> 
                           Дом уж восстановите как-нибудь сами.
@@ -304,7 +308,7 @@
             
                 <li class="benefits__detail">
                         <h3 class="benefits__h3">Кредит</h3>
-                        <p class="benefits__p">
+                        <p class="benefits__p benefits__p--sl-3">
                           Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
                         </p>
                         <a class="btn benefits-btn">Отправить заявку</a>
