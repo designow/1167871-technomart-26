@@ -987,7 +987,7 @@
 }
 
 .about-map-url {
-    display: inline-block;
+    display: block;
     margin-bottom: 32px;
 }
 
@@ -1431,12 +1431,12 @@
 }
 
 .main-banner-item:first-child {
-    background-image: url("../img/banner-1.jpg");
+    background-image: url(../img/banner-2.jpg);
     background-repeat: no-repeat;
 }
 
 .main-banner-item:last-child {
-    background-image: url(../img/banner-2.jpg);
+    background-image: url("../img/banner-1.jpg");
     background-repeat: no-repeat;
 }
 
@@ -1447,8 +1447,9 @@
 }
 
 .main-banner-control {
+    display: flex;
     position: absolute;
-    bottom: 32px;
+    bottom: 36px;
     left: 50%;
     transform: translateX(-50%);
     padding: 0;
@@ -1456,12 +1457,11 @@
 }
 
 .main-banner-control-item {
-    display: inline-block;
     position: relative;
     width: 10px;
     height: 10px;
     background-color: #fff;
-    margin: 0 3px;
+    margin: 0 5px;
     border-radius: 50%;
     cursor: pointer;
 }
