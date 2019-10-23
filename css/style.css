@@ -861,12 +861,17 @@
     margin: 0;
 }
 
-.benefits-text-sl-1 {
+.benefits-text-slide-1 {
     max-width: 275px;
 }
 
-.benefits-text-sl-2 {
+.benefits-text-slide-2 {
     max-width: 380px;
+}
+
+.benefits-text-slide-3 {
+    width: 280px;
+    margin-bottom: 26px;
 }
 
 .benefits-detail:first-child {
@@ -884,18 +889,7 @@
 .benefits-detail:last-child {
     background-image: url("../img/credit.png");
     background-repeat: no-repeat;
-    background-position: 165px 6px;
-}
-
-.benefits-detail:last-child p {
-    width: 280px;
-    margin-bottom: 26px;
-}
-
-.benefits-detail:nth-child(2) p {
-    width: 380px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    background-position: 153px 6px;
 }
 
 .benefits-detail {
