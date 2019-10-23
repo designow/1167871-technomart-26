@@ -1,12 +1,11 @@
 let mapPopup = document.querySelector(".map-popup");
-let mapLink = document.querySelector(".about__map__url");
-let mapClose = mapPopup.querySelector(".mapClose");
+let mapLink = document.querySelector(".about-map-url");
+let mapClose = mapPopup.querySelector(".map-close");
 let feedback = document.querySelector(".feedback-block");
 let feedbackClose = feedback.querySelector(".feedback-close-btn");
 let helpbutton = document.querySelector(".help-button");
 let modalclose = document.querySelector(".modal-close");
 let btncontinue = document.querySelector(".continue");
-
 
 //Открытие карты
 mapLink.addEventListener("click", function(evt) {
@@ -40,8 +39,6 @@ modalclose.addEventListener("click", function(evt) {
 btncontinue.addEventListener("click", function(evt) {
     modalinfo.classList.remove("modal-show");
 });
-
-
 
 //Открытие формы добавления в корзину
 let modalinfo = document.querySelector(".modal-info"),
