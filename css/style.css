@@ -95,7 +95,6 @@
 
 .btn {
     align-self: flex-start;
-    display: inline-block;
     background: #ee3643;
     border-radius: 3px;
     color: #fff;
@@ -1033,8 +1032,8 @@
 }
 
 .btn-about {
-    padding: 5px 40px;
-    line-height: 28px;
+    padding: 10px 40px;
+    line-height: 37px;
 }
 
 .contacts {
@@ -1052,7 +1051,7 @@
 }
 
 .help-button {
-    padding: 5px 57px 5px 64px;
+    padding: 11px 57px 10px 64px;
     letter-spacing: 0.05px;
 }
 
