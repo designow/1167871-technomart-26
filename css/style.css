@@ -1,3 +1,46 @@
+@font-face {
+    font-family: "Cuprum";
+    src: url(../fonts/cuprum.woff) format('woff'), url(../fonts/cuprum.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cuprum Bold";
+    src: url(../fonts/cuprumbold.woff) format('woff'), url(../fonts/cuprumbold.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cuprum Bold Italic";
+    src: url(../fonts/cuprumbolditalic.woff) format('woff'), url(../fonts/cuprumbolditalic.woff2) format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cuprum Italic";
+    src: url(../fonts/cuprumitalic.woff) format('woff'), url(../fonts/cuprumitalic.woff2) format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url(../fonts/ptsans.woff) format('woff'), url(../fonts/ptsans.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Sans Bold";
+    src: url(../fonts/ptsansbold.woff) format('woff'), url(../fonts/ptsansbold.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 /* Общие блоки */
 
 .body {
@@ -1214,7 +1257,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    max-width: 218px;
+    width: 218px;
     padding-bottom: 17px;
     text-align: center;
     position: relative;
@@ -1863,6 +1906,7 @@
 }
 
 .middle-header-slogan {
+    font-family: "Cuprum Italic", sans-serif;
     font-size: 16px;
     line-height: 23px;
     font-style: italic;
@@ -2307,13 +2351,6 @@
     transform: translateX(-50%) translateY(-50%);
 }
 
-.social {
-    min-width: 130px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
 .social a {
     background-color: #212a3a;
     border-radius: 100%;
@@ -2337,6 +2374,14 @@
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.social {
+    min-width: 130px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-right: 104px;
 }
 
 .feedback {
@@ -2507,7 +2552,7 @@
     font-size: 16px;
     line-height: 18px;
     margin: 0;
-    margin-right: 58px;
+    margin-right: auto;
 }
 
 .modal-info {
