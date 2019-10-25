@@ -47,6 +47,7 @@
     background: #f3f6f8;
     font-family: "Cuprum", sans-serif;
     font-size: 17px;
+    font-style: normal;
 }
 
 .header {
@@ -305,7 +306,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 7px 0 0 18px;
+    margin: 10px 0 0 18px;
     padding: 0;
     list-style: none;
 }
@@ -468,6 +469,7 @@
 .sorting-item a:focus {
     color: #000;
     border-bottom: 1px solid #ee3643;
+    outline-color: transparent;
 }
 
 .sorting-item .active,
@@ -544,6 +546,7 @@
 .sorting-buttons .button-down:focus,
 .sorting-buttons .button-up:focus {
     border-color: transparent transparent #231f20;
+    outline-color: transparent;
 }
 
 .filters-block {
@@ -597,7 +600,7 @@
 }
 
 .filters-item-heading {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans Bold", Arial, sans-serif;
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 19px;
@@ -633,6 +636,7 @@
     margin-bottom: 15px;
     padding-left: 33px;
     text-transform: uppercase;
+    outline-color: transparent;
 }
 
 .range-controls {
@@ -762,7 +766,8 @@
     background: url("../img/checkbox-off.svg") no-repeat;
 }
 
-.checkbox-label:hover::before {
+.checkbox-label:hover::before,
+.checkbox-label:focus::before {
     background: url("../img/checkbox-off-grey.svg") no-repeat;
 }
 
@@ -776,8 +781,10 @@
     background: url("../img/checkbox-on.svg") no-repeat;
 }
 
-.checkbox-item:checked+.checkbox-label:hover::before {
+.checkbox-item:checked+.checkbox-label:hover::before,
+.checkbox-item:checked+.checkbox-label:focus::before {
     background: url("../img/checkbox-on-grey.svg") no-repeat;
+    outline-color: transparent;
 }
 
 .radio-label {
@@ -808,7 +815,8 @@
     background: url("../img/radio-on.svg") no-repeat 0px 0px;
 }
 
-.checkbox-item:checked+.radio-label:hover::before {
+.checkbox-item:checked+.radio-label:hover::before,
+.checkbox-item:checked+.radio-label:focus::before {
     background: url("../img/radio-on-grey.svg") no-repeat 0px 0px;
 }
 
@@ -856,7 +864,7 @@
 }
 
 .categories_content .product {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
 }
 
 .information-header {
@@ -1087,7 +1095,7 @@
 /* Производители на главной */
 
 .brands-container {
-    padding-bottom: 65px;
+    padding-bottom: 70px;
 }
 
 .brands {
@@ -1146,7 +1154,7 @@
 .about-block {
     position: relative;
     padding-top: 70px;
-    padding-bottom: 84px;
+    padding-bottom: 86px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1156,11 +1164,13 @@
 }
 
 .about-heading {
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: normal;
     margin: 0;
     margin-bottom: 13px;
+    letter-spacing: 0.0;
 }
 
 .about {
@@ -1265,7 +1275,6 @@
 
 .product-url {
     color: #000000;
-    font-family: "PT Sans", Arial, sans-serif;
     text-decoration: none;
 }
 
@@ -1274,6 +1283,7 @@
 }
 
 .product-heading {
+    font-family: "PT Sans Bold", Arial, sans-serif;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
@@ -1289,7 +1299,7 @@
 .product-del {
     color: #a9a9a9;
     font-size: 17px;
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans Bold", Arial, sans-serif;
     font-weight: 600;
     line-height: 31px;
     text-decoration: line-through;
@@ -1298,6 +1308,7 @@
 }
 
 .product-price {
+    font-family: "PT Sans Bold", Arial, sans-serif;
     background: url("../img/red-button.svg") no-repeat center;
     color: #fff;
     font-size: 17px;
@@ -1688,10 +1699,11 @@
 }
 
 .top-header-container-logo {
+    position: absolute;
     background-color: #ee3643;
     padding: 13px 55px 8px 55px;
-    -webkit-box-shadow: 0 5px 0 0 #b52933;
-    box-shadow: 0 5px 0 0 #b52933;
+    border-bottom: 5px solid #b52933;
+    margin: 0;
 }
 
 .top-header-container-logo:hover,
@@ -1704,6 +1716,7 @@
     margin-top: 0;
     position: relative;
     width: 270px;
+    margin-left: 219px;
 }
 
 .top-header-container-search:hover::before {
@@ -2381,22 +2394,22 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-right: 104px;
+    margin-right: 107px
 }
 
 .feedback {
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    width: 317px;
+    width: 314px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 19px;
 }
 
 .feedback li:first-child {
-    margin-right: 21px;
+    margin-right: 22px;
 }
 
 .feedback-block {
@@ -2548,7 +2561,7 @@
 }
 
 .copyright {
-    width: 230px;
+    width: 233px;
     font-size: 16px;
     line-height: 18px;
     margin: 0;
