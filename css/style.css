@@ -189,10 +189,10 @@
 
 .contacts-box .phone {
     position: relative;
-    padding: 10px 0;
+    padding: 8px 0;
     border: 3px solid #fff;
     width: 265px;
-    margin: 0 0 0 12px;
+    margin: 0 0 0 13px;
 }
 
 .contacts-box .phone-number {
@@ -209,15 +209,15 @@
     height: 19px;
     background-image: url(../img/icon-phone.svg);
     position: absolute;
-    top: 10px;
-    left: 12px;
+    top: 9px;
+    left: 11px;
 }
 
 .contacts-box .address {
     font-size: 14px;
     line-height: 24px;
     color: #32425c;
-    margin: 2px 0 0 22px;
+    margin: 5px 0 0 24px;
     font-style: normal;
 }
 
@@ -306,7 +306,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 10px 0 0 18px;
+    margin: 8px 0 0 18px;
     padding: 0;
     list-style: none;
 }
@@ -350,8 +350,8 @@
 }
 
 .container-header {
-    padding-top: 47px;
-    padding-bottom: 60px;
+    padding-top: 48px;
+    padding-bottom: 59px;
 }
 
 .container-promo {
@@ -384,7 +384,7 @@
     -ms-flex-align: center;
     align-items: center;
     background: #f9f5f0;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
     padding: 23px 27px;
 }
 
@@ -442,7 +442,7 @@
 
 .sorting b {
     font-weight: 400;
-    margin-right: 104px;
+    margin-right: 105px;
 }
 
 .sorting .sorting-list {
@@ -512,10 +512,6 @@
     border-radius: 4px;
 }
 
-.filter-container {
-    padding: 20px 0 16px 0;
-}
-
 .sorting-container {
     padding: 20px 0 20px 0;
 }
@@ -549,16 +545,6 @@
     outline-color: transparent;
 }
 
-.filters-block {
-    padding-bottom: 25px;
-    margin-top: 18px;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.filters-block:first-child {
-    margin-top: 0;
-}
-
 .sorting-buttons .button-down,
 .sorting-buttons .button-up {
     width: 0;
@@ -580,6 +566,20 @@
 .sorting-buttons .button-down {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+.filter-container {
+    padding: 20px 0 16px 0;
+}
+
+.filters-block {
+    padding-bottom: 27px;
+    margin-top: 18px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.filters-block:first-child {
+    margin-top: 0;
 }
 
 .filters-block-noborder {
@@ -607,8 +607,13 @@
     font-size: 17px;
 }
 
+.filters-item-heading-wide {
+    letter-spacing: 0.6px;
+    margin-bottom: 20px;
+}
+
 .brand-filter .filters-item-heading {
-    padding-top: 6px;
+    padding-top: 5px;
 }
 
 .filters-list {
@@ -634,7 +639,7 @@
     font-size: 15px;
     min-height: 25px;
     margin-bottom: 15px;
-    padding-left: 33px;
+    padding-left: 35px;
     text-transform: uppercase;
     outline-color: transparent;
 }
@@ -841,7 +846,7 @@
     cursor: pointer;
     font-size: 13px;
     font-family: "PT Sans", Arial, sans-serif;
-    margin-top: 48px;
+    margin-top: 47px;
 }
 
 .filters-btn:hover,
@@ -886,6 +891,10 @@
 
 .information-text-wide {
     letter-spacing: 0.13px;
+}
+
+.information-text-superwide {
+    letter-spacing: 0.19px;
 }
 
 .pagination {
@@ -940,7 +949,15 @@
 
 /* Наши плюсы на главной*/
 
+.services-container {
+    margin-bottom: 79px;
+    letter-spacing: 0.10px;
+    width: 415px;
+    margin-left: 3px;
+}
+
 .services-container-h3 {
+    font-family: "Cuprum", Arial, sans-serif;
     text-transform: uppercase;
     font-size: 30px;
     font-weight: normal;
@@ -954,8 +971,6 @@
     font-size: 13px;
     line-height: 24px;
     margin: 0;
-    margin-bottom: 66px;
-    width: 405px;
 }
 
 .benefits {
@@ -967,6 +982,7 @@
     position: relative;
     min-width: 240px;
     margin-bottom: 20px;
+    margin-top: 2px;
 }
 
 .benefits::after {
@@ -1045,11 +1061,12 @@
 }
 
 .benefits-item {
+    font-family: "Cuprum Bold", Arial, sans-serif;
     display: block;
     font-size: 21px;
     font-weight: 700;
     background-color: #32425c;
-    padding: 20px 21px 19px;
+    padding: 19px 21px 20px;
     -webkit-box-shadow: inset 0 -1px 0 0 #293449, inset 0 1px 0 0 #405069;
     box-shadow: inset 0 -1px 0 0 #293449, inset 0 1px 0 0 #405069;
     cursor: pointer;
@@ -1088,14 +1105,14 @@
     flex-grow: 2;
     display: none;
     min-height: 255px;
-    padding-bottom: 30px;
+    padding-bottom: 34px;
 }
 
 
 /* Производители на главной */
 
 .brands-container {
-    padding-bottom: 70px;
+    padding-bottom: 67px;
 }
 
 .brands {
@@ -1106,7 +1123,7 @@
 
 .brands-item {
     border: 1px solid #eaeaea;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 
 .brands-item a {
@@ -1153,7 +1170,7 @@
 
 .about-block {
     position: relative;
-    padding-top: 70px;
+    padding-top: 67px;
     padding-bottom: 86px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1170,7 +1187,7 @@
     font-weight: normal;
     margin: 0;
     margin-bottom: 13px;
-    letter-spacing: 0.0;
+    letter-spacing: -0.25px;
 }
 
 .about {
@@ -1252,7 +1269,7 @@
 }
 
 .popular-products .product {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
 
 
@@ -1268,7 +1285,7 @@
     -ms-flex-direction: column;
     flex-direction: column;
     width: 218px;
-    padding-bottom: 17px;
+    padding-bottom: 20px;
     text-align: center;
     position: relative;
 }
@@ -1279,7 +1296,7 @@
 }
 
 .product img {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .product-heading {
@@ -1293,30 +1310,27 @@
     color: #000;
     padding: 0 30px;
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 
 .product-del {
+    font-family: "PT Sans Bold", Arial, sans-serif;
     color: #a9a9a9;
     font-size: 17px;
-    font-family: "PT Sans Bold", Arial, sans-serif;
-    font-weight: 600;
-    line-height: 31px;
+    line-height: 33px;
     text-decoration: line-through;
     text-transform: uppercase;
-    padding-left: 3px;
 }
 
 .product-price {
     font-family: "PT Sans Bold", Arial, sans-serif;
     background: url("../img/red-button.svg") no-repeat center;
+    background-position: 42px 0;
     color: #fff;
     font-size: 17px;
-    font-family: "PT Sans", sans-serif;
     font-weight: 600;
-    line-height: 45px;
+    line-height: 40px;
     text-transform: uppercase;
-    margin-left: 1px;
 }
 
 .flag-new::before {
@@ -1474,6 +1488,7 @@
 }
 
 .popular-categories-heading {
+    font-family: "Cuprum Bold";
     color: #ffffff;
     font-size: 24px;
     line-height: 30px;
@@ -1526,7 +1541,7 @@
     position: absolute;
     height: 65px;
     width: 44px;
-    top: 50%;
+    top: 52%;
     right: 43px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -1543,7 +1558,7 @@
     position: absolute;
     height: 61px;
     width: 75px;
-    top: 50%;
+    top: 52%;
     right: 28px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -1673,7 +1688,7 @@
 
 .benefits-background {
     background-color: #f5f8fa;
-    padding-top: 59px;
+    padding-top: 46px;
 }
 
 
@@ -1914,8 +1929,8 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 37px;
-    margin-left: 53px;
+    margin-bottom: 39px;
+    margin-left: 52px;
 }
 
 .middle-header-slogan {
@@ -2164,6 +2179,7 @@
 }
 
 .main-banner-heading {
+    font-family: "Cuprum Bold", Arial, sans-serif;
     font-size: 36px;
     line-height: 30px;
     font-weight: 700;
@@ -2309,6 +2325,7 @@
 }
 
 .footer-address {
+    font-family: "Cuprum", "Arial", sans-serif;
     color: #f3f7f9;
     font-size: 18px;
     margin: 0;
@@ -2317,6 +2334,7 @@
     margin-left: 2px;
     width: 325px;
     line-height: 1.29;
+    letter-spacing: 0.06px;
 }
 
 .footer-bottom {
