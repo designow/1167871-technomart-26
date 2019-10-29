@@ -5,22 +5,18 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="body">
     <header class="header">
         <div class="top-header">
             <nav class="container top-header-container">
-                <a href="index.html" class="top-header-container-logo">
+                <a class="top-header-container-logo">
                     <img src="img/logo-technomart.svg" width="109" height="17" alt="Логотип Техномарт">
                 </a>
                 <form action="#" method="post" class="top-header-container-search">
-                    <input type="search" placeholder="Поиск:" name="search" aria-label="Поиск по сайту" class="top-header-container-input">
-                    <span class="search-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
-              </span>
-
+                    <input type="search" placeholder="Поиск:" name="search" id="search-input" aria-label="Поиск по сайту" class="top-header-container-input"><label for="search-input" class="search-label"></label>
                 </form>
                 <a href="#" class="top-header-container-bookmarks">Закладки: 0</a>
                 <a href="#" class="top-header-container-cart">Корзина: 0</a>
@@ -56,7 +52,7 @@
             <nav class="bottom-header">
                 <ul class="bottom-header-menu">
                     <li>
-                        <a class="menu-link active active">Главная</a>
+                        <a class="menu-link">Главная</a>
                     </li>
                     <li>
                         <a href="about.html" class="menu-link">Компания</a>
@@ -249,7 +245,7 @@
                     </li>
                     <li class="brands-item">
                         <a href="catalog.html">
-                            <img src="img/lg.jpg" alt="Производитель LG" width="121" height="37">
+                            <img src="img/lg.jpg" alt="Производитель LG" width="121" height="73">
                         </a>
                     </li>
                     <li class="brands-item">
@@ -334,7 +330,7 @@
             <section class="about contacts">
                 <h2 class="about-heading">Контакты</h2>
                 <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис:</p>
-                <a href="contact.html" class="about-map-url"><img src="img/map.jpg" alt="Схема проезда" class="about-map"></a>
+                <a href="contact.html" class="about-map-url"><img src="img/map.jpg" width="300" height="158" alt="Схема проезда" class="about-map"></a>
                 <a href="feedback.html" class="btn btn-about help-button">Заблудились? Напишите нам!</a>
             </section>
             <!--  Конец: Блока контакты -->
@@ -361,7 +357,7 @@
     <footer class="footer">
         <div class="container">
             <nav class="footer-top">
-                <a href="index.html" class="footer-top-logo"><img src="img/logo-technomart.svg" width="136" height="21" alt="Логотип Техномарт"></a>
+                <a class="footer-top-logo"><img src="img/logo-technomart.svg" width="136" height="21" alt="Логотип Техномарт"></a>
                 <ul class="footer-top-items">
                     <li>
                         <a href="about.html">Компания</a>
@@ -382,7 +378,7 @@
             </nav>
             <div class="footer-middle">
                 <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-                  +7 (812) 555-05-55
+                  <a href="tel:+78125550555" class="footer-address-phone">+7 (812) 555-05-55</a>
                 </address>
 
                 <ul class="footer-top-items footer-top-items-middle">
@@ -446,16 +442,16 @@
             <div class="feedback-userinfo-block">
                 <p class="feedback-item">
                     <label for="appointment-username">Ваше имя:</label>
-                    <input type="text" name="username" placeholder="Имя Фамилия" id="appointment-username" class="feedback-form-username">
+                    <input type="text" name="username" placeholder="Имя Фамилия" id="appointment-username" class="feedback-form-username" required="">
                 </p>
                 <p class="feedback-item">
                     <label for="appointment-useremail">Ваше e-mail:</label>
-                    <input type="text" name="useremail" placeholder="email@example.com" id="appointment-useremail" class="feedback-form-emeil">
+                    <input type="text" name="useremail" placeholder="email@example.com" id="appointment-useremail" class="feedback-form-emeil" required="">
                 </p>
             </div>
             <p class="feedback-item feedback-item-message">
                 <label for="appointment-usertext">Текст письма:</label>
-                <textarea name="usertext" placeholder="В свободной форме" id="appointment-usertext" class="feedback-form-message"></textarea>
+                <textarea name="usertext" placeholder="В свободной форме" id="appointment-usertext" class="feedback-form-message" required=""></textarea>
             </p>
             <div class="feedback-btn-block">
                 <button type="submit" class="feedback-btn">Отправить</button>

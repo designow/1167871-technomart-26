@@ -1,41 +1,41 @@
 @font-face {
     font-family: "Cuprum";
-    src: url(../fonts/cuprum.woff) format('woff'), url(../fonts/cuprum.woff2) format('woff2');
+    src: url("../fonts/cuprum.woff") format("woff"), url("../fonts/cuprum.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Cuprum Bold";
-    src: url(../fonts/cuprumbold.woff) format('woff'), url(../fonts/cuprumbold.woff2) format('woff2');
+    src: url("../fonts/cuprumbold.woff") format("woff"), url("../fonts/cuprumbold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Cuprum Bold Italic";
-    src: url(../fonts/cuprumbolditalic.woff) format('woff'), url(../fonts/cuprumbolditalic.woff2) format('woff2');
+    src: url("../fonts/cuprumbolditalic.woff") format("woff"), url("../fonts/cuprumbolditalic.woff2") format("woff2");
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Cuprum Italic";
-    src: url(../fonts/cuprumitalic.woff) format('woff'), url(../fonts/cuprumitalic.woff2) format('woff2');
+    src: url("../fonts/cuprumitalic.woff") format("woff"), url("../fonts/cuprumitalic.woff2") format("woff2");
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "PT Sans";
-    src: url(../fonts/ptsans.woff) format('woff'), url(../fonts/ptsans.woff2) format('woff2');
+    src: url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "PT Sans Bold";
-    src: url(../fonts/ptsansbold.woff) format('woff'), url(../fonts/ptsansbold.woff2) format('woff2');
+    src: url("../fonts/ptsansbold.woff") format("woff"), url("../fonts/ptsansbold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
 }
@@ -45,7 +45,7 @@
 
 .body {
     background: #f3f6f8;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 17px;
     font-style: normal;
 }
@@ -91,16 +91,14 @@
     outline-color: transparent;
 }
 
-.breadcrumbs-item:first-child:hover path,
-.breadcrumbs-item:first-child:hover polygon,
-.breadcrumbs-item:first-child a:focus path,
-.breadcrumbs-item:first-child a:focus polygon {
+.breadcrumbs-home:hover path,
+.breadcrumbs-home:hover polygon {
     fill: #32425c;
     outline-color: transparent;
 }
 
-.breadcrumbs-item:first-child:active path,
-.breadcrumbs-item:first-child:active polygon {
+.breadcrumbs-home:active path,
+.breadcrumbs-home:active polygon {
     fill: #c5c5c5
 }
 
@@ -112,7 +110,7 @@
     padding-right: 0
 }
 
-.breadcrumbs-item:first-child a {
+.breadcrumbs-home a {
     margin-right: 13px
 }
 
@@ -152,10 +150,11 @@
     background: #ee3643;
     border-radius: 3px;
     color: #fff;
-    padding: 12px 54px;
+    padding: 10px 53px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
+    line-height: 1.286;
 }
 
 .btn:hover,
@@ -179,7 +178,7 @@
 }
 
 .btn-brands {
-    padding: 11px 68px;
+    padding: 9px 67px;
 }
 
 .contacts-box {
@@ -197,7 +196,7 @@
 
 .contacts-box .phone-number {
     font-size: 21px;
-    line-height: 18px;
+    line-height: 1;
     color: #ee3643;
     margin-left: 71px;
     text-decoration: none;
@@ -207,7 +206,7 @@
     content: "";
     width: 19px;
     height: 19px;
-    background-image: url(../img/icon-phone.svg);
+    background-image: url("../img/icon-phone.svg");
     position: absolute;
     top: 9px;
     left: 11px;
@@ -215,7 +214,7 @@
 
 .contacts-box .address {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.714;
     color: #32425c;
     margin: 5px 0 0 24px;
     font-style: normal;
@@ -372,6 +371,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .wrapper-main {
@@ -389,7 +389,7 @@
     align-items: center;
     background: #f9f5f0;
     margin-bottom: 22px;
-    padding: 23px 27px;
+    padding: 24px 27px;
 }
 
 .wrapper-start {
@@ -406,6 +406,7 @@
     padding: 0;
     margin: 0;
     max-width: 620px;
+    line-height: 1;
 }
 
 .wrapper-header .btn {
@@ -522,7 +523,7 @@
 
 .sorting-item a {
     color: #cacaca;
-    border-bottom: 1px dashed #ee3643;
+    border-bottom: 1px dotted #ee3643;
     text-decoration: none;
 }
 
@@ -660,7 +661,7 @@
 .by-price h3,
 .filter {
     font-style: normal;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     text-transform: uppercase;
 }
 
@@ -745,7 +746,7 @@
     font-style: normal;
     font-size: 17px;
     line-height: 18px;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     text-align: center;
     background-color: #f7f3ec;
     border: none;
@@ -883,7 +884,7 @@
     padding: 0;
     margin-bottom: 40px;
     text-transform: uppercase;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     margin-bottom: 30px;
     letter-spacing: 0.14px;
 }
@@ -1244,7 +1245,7 @@
 }
 
 .about-tk {
-    font-family: "Cuprum", "Arial", sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 39px;
     list-style: none;
@@ -1288,10 +1289,10 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 218px;
-    padding-bottom: 20px;
-    text-align: center;
     position: relative;
+    width: 218px;
+    padding-bottom: 17px;
+    text-align: center;
 }
 
 .product-url {
@@ -1309,7 +1310,7 @@
     -ms-flex-positive: 1;
     flex-grow: 1;
     font-size: 18px;
-    line-height: 19px;
+    line-height: 1.111;
     font-weight: 700;
     color: #000;
     padding: 0 30px;
@@ -1321,7 +1322,8 @@
     font-family: "PT Sans Bold", Arial, sans-serif;
     color: #a9a9a9;
     font-size: 17px;
-    line-height: 33px;
+    line-height: 1.059;
+    padding: 8px 0;
     text-decoration: line-through;
     text-transform: uppercase;
 }
@@ -1333,8 +1335,9 @@
     color: #fff;
     font-size: 17px;
     font-weight: 600;
-    line-height: 40px;
+    line-height: 1.059;
     text-transform: uppercase;
+    padding: 12px 0;
 }
 
 .flag-new::before {
@@ -1417,13 +1420,13 @@
     color: white;
     font-size: 14px;
     font-weight: normal;
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     line-height: 18px;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.product .actions .bookmark {
+.actions .bookmark {
     color: #32425c;
     background: white;
     border-bottom-color: #63a63e;
@@ -1492,10 +1495,10 @@
 }
 
 .popular-categories-heading {
-    font-family: "Cuprum Bold";
+    font-family: "Cuprum Bold", Arial, sans-serif;
     color: #ffffff;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 1.25;
     font-weight: 700;
     margin: 0 0 14px;
     max-width: 170px;
@@ -1510,7 +1513,7 @@
     width: 136px;
     text-align: center;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.286;
     text-transform: uppercase;
     padding: 10px 0;
     text-decoration: none;
@@ -1549,7 +1552,7 @@
     right: 43px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    background-image: url(../img/icon-1.svg);
+    background-image: url("../img/icon-1.svg");
     background-repeat: no-repeat;
 }
 
@@ -1566,7 +1569,7 @@
     right: 28px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    background-image: url(../img/icon-2.svg);
+    background-image: url("../img/icon-2.svg");
     background-repeat: no-repeat;
 }
 
@@ -1583,7 +1586,7 @@
     right: 31px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    background-image: url(../img/icon-3.svg);
+    background-image: url("../img/icon-3.svg");
     background-repeat: no-repeat;
 }
 
@@ -1600,7 +1603,7 @@
     right: 45px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    background-image: url(../img/icon-4.svg);
+    background-image: url("../img/icon-4.svg");
     background-repeat: no-repeat;
 }
 
@@ -1617,7 +1620,7 @@
     right: 32px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    background-image: url(../img/icon-5.svg);
+    background-image: url("../img/icon-5.svg");
     background-repeat: no-repeat;
 }
 
@@ -1628,7 +1631,7 @@
 
 .main-banner-description {
     background-color: rgba(0, 0, 0, .2);
-    padding: 26px 23px 22px;
+    padding: 22px 24px 22px;
 }
 
 .slider-1:checked~.main-banner-items .main-banner-item:first-child,
@@ -1637,7 +1640,7 @@
 }
 
 .main-banner-item:first-child {
-    background-image: url(../img/banner-2.jpg);
+    background-image: url("../img/banner-2.jpg");
     background-repeat: no-repeat;
 }
 
@@ -1738,15 +1741,14 @@
     margin-left: 219px;
 }
 
-.top-header-container-search:hover::before {
+.top-header-container-input:hover+.search-label::before,
+.search-label:hover::before {
     opacity: 1;
 }
 
-.search-icon {
-    opacity: 0.3;
-    position: absolute;
-    left: 18px;
-    top: 12px;
+.top-header-container-input:focus+.search-label::before {
+    opacity: 1;
+    background-image: url("../img/search-red.svg");
 }
 
 .top-header-container-input {
@@ -1757,10 +1759,24 @@
     font-size: 17px;
     font-weight: 400;
     font-style: normal;
-    font-family: "Cuprum", "Arial", sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     color: #fff;
     background-color: #293449;
     cursor: pointer;
+    position: relative;
+    line-height: 1.059;
+}
+
+.search-label::before {
+    opacity: 0.3;
+    position: absolute;
+    content: "";
+    left: 18px;
+    top: 12px;
+    width: 17px;
+    height: 17px;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
 }
 
 .top-header-container-input::-webkit-input-placeholder {
@@ -1783,23 +1799,15 @@
     opacity: 1;
 }
 
-.top-header-container-search input[type=search]:hover {
+.top-header-container-input:hover {
     background: #212a3a;
     border: none
 }
 
-.top-header-container-search input[type=search]:hover+.search-icon {
-    opacity: 1;
-}
-
-.top-header-container-search input[type=search]:focus {
+.top-header-container-input:focus {
     color: #000;
     background: #fff;
     outline: none;
-}
-
-.top-header-container-search input[type=search]:focus+.search-icon svg path {
-    fill: #ee3643;
 }
 
 .top-header-container-bookmarks {
@@ -1809,7 +1817,7 @@
     font-size: 17px;
     font-weight: 400;
     font-style: normal;
-    font-family: "Cuprum", "Arial", sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     text-decoration: none;
     color: #fff;
     background-color: #293449;
@@ -1826,6 +1834,7 @@
 .top-header-container-bookmarks:active,
 .top-header-container-cart:active {
     background: #161d29;
+    opacity: 0.6;
 }
 
 .top-header-container-bookmarks::before {
@@ -1862,7 +1871,7 @@
     font-size: 17px;
     font-weight: 400;
     font-style: normal;
-    font-family: "Cuprum", "Arial", sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     text-decoration: none;
     text-align: left;
     width: 100px;
@@ -1897,6 +1906,7 @@
 .top-header-container-order {
     color: #ffffff;
     text-decoration: none;
+    line-height: 1.059;
     position: relative;
     width: 150px;
     -webkit-box-sizing: border-box;
@@ -1920,6 +1930,11 @@
     background: #5fbb2d;
 }
 
+.top-header-container-order:active {
+    background: #518534;
+    opacity: 0.5;
+}
+
 
 /* Средний блок шапки сайта на главной */
 
@@ -1938,9 +1953,9 @@
 }
 
 .middle-header-slogan {
-    font-family: "Cuprum Italic", sans-serif;
+    font-family: "Cuprum Italic", Arial, sans-serif;
     font-size: 16px;
-    line-height: 23px;
+    line-height: 1.438;
     font-style: italic;
     font-weight: 500;
     color: #ee3643;
@@ -2000,25 +2015,17 @@
     margin-right: 10px;
 }
 
-.authorization a {
-    display: block;
-    font-size: 21px;
-    line-height: 18px;
-    color: #000;
-    background-color: #fff;
-    outline-color: transparent;
-}
-
 .authorization .registration {
     -ms-flex-item-align: start;
     align-self: flex-start;
     padding: 11px 24px;
 }
 
-.authorization a {
+.login,
+.registration {
     display: block;
     font-size: 21px;
-    line-height: 18px;
+    line-height: 1;
     color: #000;
     background-color: #fff;
     text-decoration: none;
@@ -2142,11 +2149,11 @@
 
 .menu-link {
     color: #fff;
-    line-height: 17px;
     display: block;
     padding: 20px 25px 19px;
     text-decoration: none;
     outline-color: transparent;
+    line-height: 1;
 }
 
 .bottom-header-menu li {
@@ -2185,7 +2192,7 @@
 .main-banner-heading {
     font-family: "Cuprum Bold", Arial, sans-serif;
     font-size: 36px;
-    line-height: 30px;
+    line-height: 1;
     font-weight: 700;
     margin: 0;
     text-transform: uppercase;
@@ -2196,14 +2203,14 @@
     margin: 3px 0 0;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.333;
 }
 
 .main-banner-left,
 .main-banner-right {
     position: absolute;
     cursor: pointer;
-    top: 115px;
+    top: 114px;
 }
 
 .main-banner-left {
@@ -2211,13 +2218,13 @@
 }
 
 .main-banner-right {
-    right: 25px;
+    right: 20px;
 }
 
 .main-banner-button {
     display: block;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.286;
     color: #fff;
     margin-top: 102px;
     margin-left: 26px;
@@ -2341,6 +2348,11 @@
     letter-spacing: 0.06px;
 }
 
+.footer-address-phone {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .footer-bottom {
     background-color: #293449;
     color: #fff;
@@ -2349,7 +2361,7 @@
 
 .vk::before {
     content: "";
-    background-image: url(../img/icon-vk.svg);
+    background-image: url("../img/icon-vk.svg");
     background-repeat: no-repeat;
     position: absolute;
     height: 15px;
@@ -2362,7 +2374,7 @@
 
 .fb::before {
     content: "";
-    background-image: url(../img/icon-fb.svg);
+    background-image: url("../img/icon-fb.svg");
     background-repeat: no-repeat;
     position: absolute;
     height: 22px;
@@ -2375,7 +2387,7 @@
 
 .inst::before {
     content: "";
-    background-image: url(../img/icon-insta.svg);
+    background-image: url("../img/icon-insta.svg");
     background-repeat: no-repeat;
     position: absolute;
     height: 21px;
@@ -2472,7 +2484,7 @@
     width: 220px;
     padding: 8px 2px 10px 8px;
     font-size: 13px;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: left;
@@ -2488,7 +2500,7 @@
     box-sizing: border-box;
     padding: 5px 10px;
     font-size: 13px;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     color: #a9a9a9;
     border: 2px solid #dee3e4;
     outline: 0;
@@ -2552,7 +2564,7 @@
     width: 460px;
     padding: 11px 50px 8px;
     font-size: 14px;
-    font-family: "Cuprum", "Arial", sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
