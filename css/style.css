@@ -883,12 +883,11 @@
 }
 
 .information-header {
+    margin: 0;
+    padding: 0;
     font-size: 30px;
     font-weight: 100;
     line-height: 30px;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 40px;
     text-transform: uppercase;
     font-family: "Cuprum", Arial, sans-serif;
     margin-bottom: 30px;
@@ -1369,7 +1368,7 @@
     left: 0;
     width: 218px;
     height: 88px;
-    padding: 40px 0;
+    padding: 45px 1px;
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 10;
 }
@@ -2345,7 +2344,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 11px 0 53px 0;
+    padding: 14px 0 50px 0;
 }
 
 .footer-address {
@@ -2508,6 +2507,20 @@
     line-height: 18px;
 }
 
+.feedback-form-username:hover,
+.feedback-form-emeil:hover,
+.feedback-form-message:hover {
+    border: 2px solid #b5b5b5;
+    outline-color: transparent;
+}
+
+.feedback-form-username:focus,
+.feedback-form-emeil:focus,
+.feedback-form-message:focus {
+    border: 2px solid #ee3643;
+    outline-color: transparent;
+}
+
 .feedback-form-message {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -2633,7 +2646,7 @@
 
 .modal-info .icon {
     position: relative;
-    margin: 0 30px 0 0;
+    margin: 3px 34px 0 0;
     width: 67px;
     height: 67px;
     background-color: #63a63e;
@@ -2658,9 +2671,9 @@
 
 .modal-info h2 {
     font-size: 30px;
-    line-height: 18px;
+    line-height: 30px;
     font-weight: 400;
-    letter-spacing: -1.4px;
+    letter-spacing: 1;
     margin: 0;
     color: #000;
     -ms-flex-item-align: center;
@@ -2672,7 +2685,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 45px 80px 49px;
+    padding: 45px 80px 46px;
 }
 
 .modal-container {
@@ -2686,7 +2699,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 38px 80px;
+    padding: 40px 80px;
     background-color: #f1f1f1;
 }
 
