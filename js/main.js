@@ -2,6 +2,10 @@ let mapPopup = document.querySelector(".map-popup");
 let mapLink = document.querySelector(".about-map-url");
 let mapClose = mapPopup.querySelector(".map-close");
 let feedback = document.querySelector(".feedback-block");
+let form = feedback.querySelector(".feedback-block-content");
+let login = feedback.querySelector("[name=username]");
+let email = feedback.querySelector("[name=useremail]");
+let usertext = feedback.querySelector("[name=usertext]");
 let feedbackClose = feedback.querySelector(".feedback-close-btn");
 let helpbutton = document.querySelector(".help-button");
 let modalclose = document.querySelector(".modal-close");
@@ -24,9 +28,10 @@ mapClose.addEventListener("click", function(evt) {
     mapPopup.classList.remove("modal-show");
 });
 
-//Закрытие карты
+//Закрытие обратной связи
 feedbackClose.addEventListener("click", function(evt) {
     feedback.classList.remove("modal-show");
+    feedback.classList.remove("modal-error");
 });
 
 
@@ -50,4 +55,17 @@ let modalinfo = document.querySelector(".modal-info"),
 
 buy.forEach(function(evt) {
     evt.addEventListener("click", onClickButton)
+});
+
+form.addEventListener("submit", function(evt) {
+    if (!login.value || !email.value || !usertext.value) {
+        evt.preventDefault();
+        feedback.classList.remove("modal-error");
+        feedback.offsetWidth = feedback.offsetWidth;
+        feedback.classList.add("modal-error");
+    } else {
+        if (isStorageSupport) {
+            localStorage.setItem("login", login.value);
+        }
+    }
 });
