@@ -2162,12 +2162,15 @@
     left: 15px;
 }
 
-.login:hover svg,
-.login:focus svg {
+.login:hover path,
+.login:hover polygon,
+.login:focus path,
+.login:focus polygon {
     fill: #32425c;
 }
 
-.login:active svg {
+.login:active path,
+.login:active polygon {
     fill: #c5c5c5;
 }
 
