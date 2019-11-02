@@ -281,6 +281,7 @@
 
 .map-popup {
     background: url("../img/big_map.jpg") no-repeat right bottom;
+    background-color: #333;
     position: fixed;
     top: 5%;
     left: 50%;
@@ -1128,21 +1129,32 @@
     background-position: 151px 23px;
 }
 
-.benefits-detail:nth-child(2) {
+.benefits-detail:nth-child(2)::after {
+    position: absolute;
+    content: "";
+    width: 389px;
+    height: 283px;
     background-image: url("../img/warranty.png");
     background-repeat: no-repeat;
-    background-position: 239px 3px;
+    top: 0;
+    right: -9px;
 }
 
-.benefits-detail:last-child {
+.benefits-detail:last-child::after {
+    position: absolute;
+    content: "";
+    width: 465px;
+    height: 285px;
     background-image: url("../img/credit.png");
     background-repeat: no-repeat;
-    background-position: 165px 0px;
+    top: 0;
+    right: -9px;
 }
 
 .benefits-detail {
     width: 620px;
     min-height: 285px;
+    position: relative;
 }
 
 .benefits-item {
@@ -1181,7 +1193,7 @@
     transition-duration: .2s;
 }
 
-.benefits-detail:first-child {
+.benefits-detail:nth-child(1) {
     display: block;
 }
 
@@ -1409,7 +1421,7 @@
     margin-bottom: 7px;
 }
 
-.product-del {
+.product-old-price {
     font-family: "PT Sans Bold", Arial, sans-serif;
     color: #a9a9a9;
     font-size: 17px;
@@ -1732,8 +1744,7 @@
     padding: 22px 24px 22px;
 }
 
-.slider-1:checked~.main-banner-items .main-banner-item:first-child,
-.slider-2:checked~.main-banner-items .main-banner-item:last-child {
+.main-banner-item:last-child {
     display: block;
 }
 
@@ -1776,8 +1787,7 @@
     cursor: pointer;
 }
 
-.slider-1:checked~.main-banner-control .main-banner-control-item-1::after,
-.slider-2:checked~.main-banner-control .main-banner-control-item-2::after {
+.main-banner-control-item-2::after {
     content: "";
     position: absolute;
     left: 2px;
@@ -2152,15 +2162,12 @@
     left: 15px;
 }
 
-.login:hover path,
-.login:hover polygon,
-.login:focus path,
-.login:focus polygon {
+.login:hover svg,
+.login:focus svg {
     fill: #32425c;
 }
 
-.login:active path,
-.login:active polygon {
+.login:active svg {
     fill: #c5c5c5;
 }
 
@@ -2562,6 +2569,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .social {
@@ -2569,7 +2577,9 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-right: 107px
+    margin-right: 107px;
+    max-width: 250px;
+    align-self: flex-start;
 }
 
 .feedback {
@@ -2581,9 +2591,14 @@
     display: flex;
     font-size: 16px;
     line-height: 18px;
+    align-self: flex-start;
 }
 
-.feedback li:first-child {
+.feedback li {
+    margin-bottom: 10px;
+}
+
+.feedback li:nth-child(odd) {
     margin-right: 22px;
 }
 

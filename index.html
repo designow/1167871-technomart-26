@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="body">
@@ -16,7 +16,8 @@
                     <img src="img/logo-technomart.svg" width="109" height="17" alt="Логотип Техномарт">
                 </a>
                 <form action="#" method="post" class="top-header-container-search">
-                    <input type="search" placeholder="Поиск:" name="search" id="search-input" aria-label="Поиск по сайту" class="top-header-container-input"><label for="search-input" class="search-label"></label>
+                    <input type="search" placeholder="Поиск:" name="search" id="search-input" aria-label="Поиск по сайту" class="top-header-container-input">
+                    <label for="search-input" class="search-label"></label>
                 </form>
                 <a href="#" class="top-header-container-bookmarks">Закладки: 0</a>
                 <a href="#" class="top-header-container-cart">Корзина: 0</a>
@@ -32,18 +33,18 @@
                         <a href="tel:+78125550555" class="phone-number">+7 (812) 555-05-55</a>
                     </p>
                     <address class="address">
-              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            </address>
+                      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                   </address>
                 </div>
                 <p class="authorization">
-                    <a class="login" href="">
+                    <a class="login" href="#">
                         <svg version="1.1" x="0px" y="0px" width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
-                <g>
-                  <polygon fill="#c5c5c5" points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17   "/>
-                </g>
-                <path fill="#c5c5c5" d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
-                v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/>
-              </svg>
+                            <g>
+                            <polygon fill="#c5c5c5" points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17   "/>
+                            </g>
+                            <path fill="#c5c5c5" d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
+                            v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/>
+                     </svg>
                         <span>Войти</span>
                     </a>
                     <a class="registration" href="#"><span>Регистрация</span></a>
@@ -164,7 +165,7 @@
                               Перфоратор BOSCH BFG 9000
                           </a>
                         </h3>
-                        <span class="product-del">32500 P.</span>
+                        <span class="product-old-price">32500 P.</span>
                         <span class="product-price">25500 P.</span>
                     </section>
                     <section class="product">
@@ -178,7 +179,7 @@
                               Перфоратор BOSCH BFG 3000
                             </a>
                         </h3>
-                        <span class="product-del">22500 Р.</span>
+                        <span class="product-old-price">22500 Р.</span>
                         <span class="product-price">15500 P.</span>
                     </section>
                     <section class="product">
@@ -192,7 +193,7 @@
                               Перфоратор BOSCH BFG 6000
                             </a>
                         </h3>
-                        <span class="product-del">30500 Р.</span>
+                        <span class="product-old-price">30500 Р.</span>
                         <span class="product-price">25500 P.</span>
                     </section>
                     <section class="product flag-new">
@@ -330,22 +331,24 @@
             <section class="about contacts">
                 <h2 class="about-heading">Контакты</h2>
                 <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис:</p>
-                <a href="contact.html" class="about-map-url"><img src="img/map.jpg" width="300" height="158" alt="Схема проезда" class="about-map"></a>
+                <a href="contact.html" class="about-map-url">
+                    <img src="img/map.jpg" width="300" height="158" alt="Схема проезда" class="about-map">
+                </a>
                 <a href="feedback.html" class="btn btn-about help-button">Заблудились? Напишите нам!</a>
             </section>
             <!--  Конец: Блока контакты -->
             <!-- PopUP: Схема проезда -->
             <div class="map-popup">
                 <h2 class="visually-hidden">Схема проезда</h2>
-                <button type="button" title="Закрыть" class="map-close">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
-          <path fill="#EE3643" d="M13.273,10.5l7.422-7.422c0.389-0.389,0.389-1.025,0-1.414l-1.359-1.359c-0.389-0.389-1.025-0.389-1.414,0
-            L10.5,7.727L3.078,0.305c-0.389-0.389-1.025-0.389-1.414,0L0.305,1.664c-0.389,0.389-0.389,1.025,0,1.414L7.727,10.5l-7.421,7.422
-            c-0.389,0.389-0.389,1.025,0,1.414l1.359,1.359c0.389,0.389,1.025,0.389,1.414,0l7.422-7.422l7.422,7.422
-            c0.389,0.389,1.025,0.389,1.414,0l1.359-1.359c0.389-0.389,0.389-1.025,0-1.414L13.273,10.5z"/>
-          </svg>
-        </button>
+                <button type="button" title="Закрыть" class="map-close" aria-label="Закрыть карту">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
+                    <path fill="#EE3643" d="M13.273,10.5l7.422-7.422c0.389-0.389,0.389-1.025,0-1.414l-1.359-1.359c-0.389-0.389-1.025-0.389-1.414,0
+                        L10.5,7.727L3.078,0.305c-0.389-0.389-1.025-0.389-1.414,0L0.305,1.664c-0.389,0.389-0.389,1.025,0,1.414L7.727,10.5l-7.421,7.422
+                        c-0.389,0.389-0.389,1.025,0,1.414l1.359,1.359c0.389,0.389,1.025,0.389,1.414,0l7.422-7.422l7.422,7.422
+                        c0.389,0.389,1.025,0.389,1.414,0l1.359-1.359c0.389-0.389,0.389-1.025,0-1.414L13.273,10.5z"/>
+                    </svg>
+                </button>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d594.1898431367896!2d30.32281709519088!3d59.938639343398236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1460921418112"
                     width="940" height="448" allowfullscreen class="wide-map">
               </iframe>
@@ -357,7 +360,9 @@
     <footer class="footer">
         <div class="container">
             <nav class="footer-top">
-                <a class="footer-top-logo"><img src="img/logo-technomart.svg" width="136" height="21" alt="Логотип Техномарт"></a>
+                <a class="footer-top-logo">
+                    <img src="img/logo-technomart.svg" width="136" height="21" alt="Логотип Техномарт">
+                </a>
                 <ul class="footer-top-items">
                     <li>
                         <a href="#">Компания</a>
@@ -415,10 +420,12 @@
                 </ul>
                 <ul class="feedback">
                     <li>
-                        <p class="feedback-text">Обратная связь:</p><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                        <p class="feedback-text">Обратная связь:</p>
+                        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                     </li>
                     <li>
-                        <p class="feedback-text">Разработано — </p><a href="https://htmlacademy.ru/intensive/htmlcss" target=_blank>htmlacademy.ru</a>
+                        <p class="feedback-text">Разработано — </p>
+                        <a href="https://htmlacademy.ru/intensive/htmlcss" target=_blank>htmlacademy.ru</a>
                     </li>
                 </ul>
             </div>
