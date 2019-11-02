@@ -2160,6 +2160,7 @@
 .login svg {
     position: absolute;
     left: 15px;
+    top: 12px;
 }
 
 .login:hover path,
