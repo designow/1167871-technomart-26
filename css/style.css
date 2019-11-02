@@ -475,12 +475,6 @@
 
 /* Сортировка */
 
-.categories_content .sorting {
-    padding: 8px 17px 11px 19px;
-    background-color: #f7f3ec;
-    border-radius: 4px;
-}
-
 .categories_content .sorting,
 .sorting .sorting-list {
     font-family: "PT Sans", Arial, sans-serif;
@@ -565,7 +559,7 @@
 }
 
 .categories_content .sorting {
-    padding: 10px 17px 11px 19px;
+    padding: 8px 17px 12px 19px;
     background-color: #f7f3ec;
     border-radius: 4px;
 }
@@ -1184,7 +1178,7 @@
     padding: 12px 45px;
 }
 
-.benefits-item-1 {
+.benefits-item:first-child {
     background-color: #fff;
     color: #32425c;
     -webkit-box-shadow: none;
@@ -2603,7 +2597,7 @@
 }
 
 .feedback li:nth-child(odd) {
-    margin-right: 22px;
+    margin-right: 24px;
 }
 
 .feedback-block {
